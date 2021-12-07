@@ -1,0 +1,118 @@
+!Evergine.Assets.Exporters.RenderLayerMetaFile,Evergine.Assets
+Id: 7af05fc6-14cc-440b-92f4-29815fdcc856
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+Profiles: {}
+RenderLayerInfo:
+  Id: 26d5943b-618c-4067-a8bd-e78c05cf3086
+  Order: 0
+  RenderState:
+    BlendFactor: null
+    BlendState:
+      AlphaToCoverageEnable: false
+      IndependentBlendEnable: false
+      RenderTarget0:
+        BlendEnable: false
+        BlendOperationAlpha: Add
+        BlendOperationColor: Add
+        ColorWriteChannels: All
+        DestinationBlendAlpha: Zero
+        DestinationBlendColor: Zero
+        SourceBlendAlpha: One
+        SourceBlendColor: One
+      RenderTarget1:
+        BlendEnable: false
+        BlendOperationAlpha: Add
+        BlendOperationColor: Add
+        ColorWriteChannels: All
+        DestinationBlendAlpha: Zero
+        DestinationBlendColor: Zero
+        SourceBlendAlpha: One
+        SourceBlendColor: One
+      RenderTarget2:
+        BlendEnable: false
+        BlendOperationAlpha: Add
+        BlendOperationColor: Add
+        ColorWriteChannels: All
+        DestinationBlendAlpha: Zero
+        DestinationBlendColor: Zero
+        SourceBlendAlpha: One
+        SourceBlendColor: One
+      RenderTarget3:
+        BlendEnable: false
+        BlendOperationAlpha: Add
+        BlendOperationColor: Add
+        ColorWriteChannels: All
+        DestinationBlendAlpha: Zero
+        DestinationBlendColor: Zero
+        SourceBlendAlpha: One
+        SourceBlendColor: One
+      RenderTarget4:
+        BlendEnable: false
+        BlendOperationAlpha: Add
+        BlendOperationColor: Add
+        ColorWriteChannels: All
+        DestinationBlendAlpha: Zero
+        DestinationBlendColor: Zero
+        SourceBlendAlpha: One
+        SourceBlendColor: One
+      RenderTarget5:
+        BlendEnable: false
+        BlendOperationAlpha: Add
+        BlendOperationColor: Add
+        ColorWriteChannels: All
+        DestinationBlendAlpha: Zero
+        DestinationBlendColor: Zero
+        SourceBlendAlpha: One
+        SourceBlendColor: One
+      RenderTarget6:
+        BlendEnable: false
+        BlendOperationAlpha: Add
+        BlendOperationColor: Add
+        ColorWriteChannels: All
+        DestinationBlendAlpha: Zero
+        DestinationBlendColor: Zero
+        SourceBlendAlpha: One
+        SourceBlendColor: One
+      RenderTarget7:
+        BlendEnable: false
+        BlendOperationAlpha: Add
+        BlendOperationColor: Add
+        ColorWriteChannels: All
+        DestinationBlendAlpha: Zero
+        DestinationBlendColor: Zero
+        SourceBlendAlpha: One
+        SourceBlendColor: One
+    DepthStencilState:
+      BackFace:
+        StencilDepthFailOperation: Keep
+        StencilFailOperation: Keep
+        StencilFunction: Equal
+        StencilPassOperation: Keep
+      DepthEnable: true
+      DepthFunction: LessEqual
+      DepthWriteMask: true
+      FrontFace:
+        StencilDepthFailOperation: Keep
+        StencilFailOperation: Keep
+        StencilFunction: Equal
+        StencilPassOperation: Keep
+      StencilEnable: true
+      StencilReadMask: 255
+      StencilWriteMask: 255
+    RasterizerState:
+      AntialiasedLineEnable: false
+      CullMode: Back
+      DepthBias: 0
+      DepthBiasClamp: 0.0
+      DepthClipEnable: true
+      FillMode: Solid
+      FrontCounterClockwise: false
+      ScissorEnable: false
+      SlopeScaledDepthBias: 0.0
+    SampleMask: null
+    StencilReference: 7
+  SortMode: FrontToBack

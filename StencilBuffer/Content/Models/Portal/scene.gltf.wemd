@@ -1,0 +1,31 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 2184cefc-d501-410b-9d1e-a45e1bf10de6
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: 1a479f83-0725-4fce-acd6-c1a90b9a1aa3
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 19a550a5-0bf7-43b5-94dc-3cdbb63af4cf
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: PortalFrame
+        Item2: 9a131b1b-1c6f-45e3-9efb-044f46c5bcc8
+    Nodes:
+      - RootNode (gltf orientation matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).PortalThing_fbx
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).PortalThing_fbx.RootNode
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).PortalThing_fbx.RootNode.PortalFrame
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).PortalThing_fbx.RootNode.PortalFrame.PortalFrame_PortalFrame_0
+SwapWindingOrder: false

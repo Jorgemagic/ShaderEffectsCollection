@@ -1,0 +1,30 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 65b0c5e4-d119-4c82-a07f-dbfa5bb2e251
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: 6f775ba8-b5e5-4d26-80fc-e0116bd672d1
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 2cc8ad9f-808e-4028-87d9-ff18dd6766a4
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: None
+        Item2: 0d572395-3667-42a4-89dc-9d6dce34c685
+    Nodes:
+      - RootNode (gltf orientation matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).Collada visual scene group
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).Collada visual scene group.Cube_000_Cube_002
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).Collada visual scene group.Cube_000_Cube_002.defaultMaterial
+SwapWindingOrder: false
