@@ -1,0 +1,28 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: ef95e8bc-d9cb-45ea-a697-b809c193380f
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: b68ce98b-05d0-44cc-948b-b5b7fd575e65
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: d672019c-2887-4056-a0e7-2141d2fe5f78
+  Layer: e35c59a9-26ab-4b4c-8210-4b1f21c31530
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: Intensity
+      Type: System.Single
+      ValueByteArray: zczMPQ==
+  Samplers:
+    - ID: 7d1e2792-2031-42bb-a67c-0dbd282be12a
+      Name: Sampler
+  Textures:
+    - ID: da7b3e16-7a8d-495a-b2ee-b4bdc16c8744
+      Name: DistortionTexture
+Profiles: {}

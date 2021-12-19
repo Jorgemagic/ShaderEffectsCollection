@@ -1,0 +1,32 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: f86c6282-b663-4e36-88c6-2028808bd0c2
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: d7f70357-63a7-4310-a82a-48440e6dbdec
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 44bf90f1-4ab1-456c-9883-ba2383c7f6fd
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: Scene_-_Root
+        Item2: 7b5795da-e3c8-4e09-b37f-4a3b1bac60eb
+    Nodes:
+      - RootNode (gltf orientation matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).Geode
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).Geode._Node_3
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).Geode._Node_4
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).Geode._Node_5
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).Geode._Node_6
+SwapWindingOrder: false
