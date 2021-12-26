@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Evergine.Common" Version="2021.11.17.2-preview" />
+    <PackageReference Include="Evergine.Components" Version="2021.11.17.2-preview" />
+    <PackageReference Include="Evergine.Framework" Version="2021.11.17.2-preview" />
+    <PackageReference Include="Evergine.Editor.Extension" Version="2021.11.17.2-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HeightMap\HeightMap.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 7727be75-cda6-4c41-bfd6-f9b5f880139c
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: false
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: 6d90c0c4-a605-4a73-b9dc-2ba718275129
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 0f285fd1-ac1d-41f4-b629-2f043ea555e7
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: __GLTFLoader._default
+        Item2: 28f63f17-d133-4c90-a2ac-42d2306c45f8
+    Nodes:
+      - Plane
+SwapWindingOrder: true

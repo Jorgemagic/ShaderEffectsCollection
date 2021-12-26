@@ -1,0 +1,28 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: a25e149d-55ef-45bd-811e-b9775f12f88e
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 962e26e7-84e3-43f2-ba35-4511fadaf517
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: df0f2471-ab44-4643-afce-2fe1b4f45904
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: HeightAmount
+      Type: System.Single
+      ValueByteArray: zczMPQ==
+  Samplers:
+    - ID: 7d1e2792-2031-42bb-a67c-0dbd282be12a
+      Name: Sampler
+  Textures:
+    - ID: 42e65dea-6457-420c-b96a-a38f3aa8fa01
+      Name: HeightMap
+Profiles: {}
