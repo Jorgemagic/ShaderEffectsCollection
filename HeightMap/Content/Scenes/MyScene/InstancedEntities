@@ -72,7 +72,7 @@ Items:
       - !Evergine.Framework.Graphics.Camera3D,Evergine.Framework
         Id: 5b10653e-93d2-48e7-884f-a07b2ac173ee
         Aperture: 1.0
-        AspectRatio: 1.85806453
+        AspectRatio: 1.24067795
         AutoDepthBounds: false
         AutoExposureEnabled: false
         CameraOrder: 0.0
@@ -104,10 +104,10 @@ Items:
         MinLogLuminance: -10.0
         NearPlane: 0.100000001
         ScreenViewport:
-          Height: 310.0
+          Height: 295.0
           MaxDepth: 1.0
           MinDepth: 0.0
-          Width: 576.0
+          Width: 366.0
           X: 0.0
           Y: 0.0
         Sensitivity: 100.0
@@ -134,14 +134,14 @@ Items:
         Id: d73a976d-b2ab-4572-9ec9-351ded5f6fd3
         IsEnabled: true
         LocalOrientation:
-          W: 0.582563519
-          X: -0.271654308
-          Y: 0.694271922
-          Z: 0.323743761
+          W: 0.642592549
+          X: -0.0158486981
+          Y: 0.506722748
+          Z: 0.574504614
         LocalPosition:
           X: 4.0
           Y: 4.0
-          Z: 4.0
+          Z: 5.10654593
         LocalScale:
           X: 1.0
           Y: 1.0
@@ -150,9 +150,9 @@ Items:
         Id: 5f6768ca-a7e6-4ab7-82b2-d9b3c42d111f
         Color:
           A: 0
-          B: 228
-          G: 240
-          R: 249
+          B: 224
+          G: 238
+          R: 248
         ColorByTemperature: true
         DebugMode: false
         GammaDistribution: 0.800000012
@@ -162,9 +162,9 @@ Items:
         IsShadowEnabled: true
         LinearColor:
           A: 0.0
-          B: 0.77908951
-          G: 0.874792635
-          R: 0.9453125
+          B: 0.750058413
+          G: 0.857221544
+          R: 0.936782181
         ShadowBias: 0.00499999989
         ShadowDistance: 80.0
         ShadowOpacity: 1.0
@@ -199,13 +199,13 @@ Items:
           Z: 0.0
         LocalScale:
           X: 1.0
-          Y: 1.0
+          Y: 5.0
           Z: 1.0
       - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: f03f5544-91f3-483a-8d33-866dc4142b43
+        Material: 4fa446d5-cb4e-48f5-9765-1903de9b4a34
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
         Diameter: 1.0
@@ -259,9 +259,9 @@ Items:
           Y: 0.0
           Z: 0.0
         LocalScale:
-          X: 1.0
-          Y: 1.0
-          Z: 1.0
+          X: 10.0
+          Y: 10.0
+          Z: 10.0
       - !HeightMap.Components.SegmentationPlane,HeightMap
         Id: caab9953-7f55-4ee0-b92f-ca9c2dcfb23b
         HeightSegments: 100
@@ -278,7 +278,48 @@ Items:
         IsCullingEnabled: true
         IsEnabled: true
         OrderBias: 0
-        RenderFlags: None
+        RenderFlags: CastShadows
     Children: []
     Id: d4f31e31-02f3-4733-9917-bed5e2f6a3c8
+  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+    Name: teapot
+    Tag: null
+    IsEnabled: true
+    IsStatic: false
+    Components:
+      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+        Id: ac00cbd4-a978-44c2-8904-b71bad943919
+        IsEnabled: true
+        LocalOrientation:
+          W: 1.0
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        LocalPosition:
+          X: -2.71942139
+          Y: 1.04242539
+          Z: -2.45346284
+        LocalScale:
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+        Id: 29078ebc-56cb-4bc0-b36e-e7c99484cce8
+        AsignedTo: Default
+        IsEnabled: true
+        Material: 02181b63-5a0e-46d1-9208-d92376ae33fb
+      - !Evergine.Components.Graphics3D.TeapotMesh,Evergine.Components
+        Id: 88241354-8add-406d-ab21-ad1d6875cd50
+        IsEnabled: true
+        Size: 1.0
+        Tessellation: 16
+      - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+        Id: 9db90312-6648-458c-b57d-5834eafb5481
+        DebugBoundingbox: true
+        IsCullingEnabled: true
+        IsEnabled: true
+        OrderBias: 0
+        RenderFlags: CastShadows
+    Children: []
+    Id: 4d8c0a35-47ce-48d0-b05f-f794f124ae75
 Managers: []
