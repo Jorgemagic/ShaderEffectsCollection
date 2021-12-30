@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 2cada1c3-ce9e-4707-992a-d4011ebc03bc
+  Id: 4449274b-b68f-4350-8646-9de457ce81fa
   ActiveDirectives:
     - DIFF
     - HEIGHT
@@ -61,7 +61,7 @@ MaterialInfo:
       ValueByteArray: AACAPw==
     - Name: Metallic
       Type: System.Single
-      ValueByteArray: AAAAPw==
+      ValueByteArray: AAAAAA==
     - Name: Roughness
       Type: System.Single
       ValueByteArray: AAAAPw==

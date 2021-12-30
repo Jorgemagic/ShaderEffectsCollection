@@ -6,7 +6,7 @@ using System;
 
 namespace HeightMap.Components
 {
-    public class SegmentationPlane : PrimitiveBaseMesh
+    public class SingleMeshPlane : PrimitiveBaseMesh
     {
         private int widthSegments;
         private int heightSegments;
@@ -43,7 +43,7 @@ namespace HeightMap.Components
             }
         }
 
-        public SegmentationPlane()
+        public SingleMeshPlane()
         {
             this.widthSegments = 1;
             this.HeightSegments = 1;

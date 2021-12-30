@@ -30,7 +30,7 @@ namespace HeightMap
             var assetsService = this.Container.Resolve<AssetsService>();
 
             // Navigate to scene
-            var scene = assetsService.Load<MyScene>(EvergineContent.Scenes.MyScene_wescene);
+            var scene = assetsService.Load<MyScene>(EvergineContent.Scenes.HeightMapScene_wescene);
             ScreenContext screenContext = new ScreenContext(scene);
             screenContextManager.To(screenContext);
         }
