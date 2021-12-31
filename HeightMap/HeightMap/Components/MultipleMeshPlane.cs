@@ -19,6 +19,7 @@ namespace HeightMap.Components
         protected int widthSegments;
         protected int heightSegments;
         protected Random random = new Random();
+        protected Color[] colors = new Color[25];
 
         [RenderPropertyAsInput(1, 500, AsSlider = true, DesiredChange = 1, DesiredLargeChange = 2, DefaultValue = 1)]
         public int WidthSegments
@@ -96,6 +97,11 @@ namespace HeightMap.Components
                 return false;
             }
 
+            for(int i = 0; i < this.colors.Length; i++)
+            {
+                this.colors[i] = new Color((float)random.NextDouble(), (float)random.NextDouble(), (float)random.NextDouble(), 1.0f);
+            }
+
             this.Build();
 
             return true;
@@ -118,7 +124,7 @@ namespace HeightMap.Components
             this.meshCollection.Clear();
             List<MeshBuilder> meshBuilders = new List<MeshBuilder>();
 
-            Color meshColor = Color.Black;
+            int meshIndex = 0;
             float wCeiling = (float)Math.Ceiling(this.widthSegments / 100.0f);
             for (int i = 0; i < wCeiling; i++)
             {
@@ -139,7 +145,7 @@ namespace HeightMap.Components
                     meshBuilders.Add(builder);
                     int index = 0;
 
-                    meshColor = new Color((float)random.NextDouble(), (float)random.NextDouble(), (float)random.NextDouble(), 1.0f);                   
+                    Color meshColor = this.colors[meshIndex++];
 
                     for (int w = quadWIndex; w < quadWRest; w++)
                     {
