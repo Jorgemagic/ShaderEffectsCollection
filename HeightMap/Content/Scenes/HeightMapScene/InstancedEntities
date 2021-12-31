@@ -205,7 +205,7 @@ Items:
         Id: 333cefec-da47-454c-bd8c-1b1c37d4e7dc
         AsignedTo: Default
         IsEnabled: true
-        Material: e6684aea-2aa1-475a-8a94-47f6f4431b7e
+        Material: 27ab2d4e-e5cb-460d-a657-8e93a4a79b63
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 25c20a6d-4118-4aa5-9614-347f33d2463a
         Diameter: 1.0
@@ -285,6 +285,10 @@ Items:
           X: 0.0
           Y: 0.200000003
           Z: 0.0
+        IsEnabled: true
+        UpdateOrder: 0.5
+      - !HeightMap.Components.UIComponent,HeightMap
+        Id: 98fb26de-3e9c-42be-8716-26d1a8a4c368
         IsEnabled: true
         UpdateOrder: 0.5
     Children: []

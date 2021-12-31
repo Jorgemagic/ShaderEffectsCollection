@@ -1,9 +1,6 @@
-using Evergine.Common.Graphics;
-using Evergine.Components.Graphics3D;
 using Evergine.Framework;
-using Evergine.Framework.Graphics;
-using Evergine.Framework.Services;
-using Evergine.Mathematics;
+using Evergine.UI;
+using HeightMap.Components;
 
 namespace HeightMap
 {
@@ -11,12 +8,13 @@ namespace HeightMap
     {
         public override void RegisterManagers()
         {
+            this.Managers.AddManager(new ImGuiManager());
             base.RegisterManagers();
             this.Managers.AddManager(new Evergine.Bullet.BulletPhysicManager3D());
         }
 
         protected override void CreateScene()
-        {
+        {            
         }
     }
 }

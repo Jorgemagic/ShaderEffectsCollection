@@ -31,8 +31,11 @@ namespace HeightMap.Components
                     throw new ArgumentOutOfRangeException(nameof(this.WidthSegments));
                 }
 
-                this.widthSegments = value;
-                this.NotifyPropertyChange();
+                if (this.widthSegments != value)
+                {
+                    this.widthSegments = value;
+                    this.NotifyPropertyChange();
+                }
             }
         }
 
@@ -47,8 +50,11 @@ namespace HeightMap.Components
                     throw new ArgumentOutOfRangeException(nameof(this.HeightSegments));
                 }
 
-                this.heightSegments = value;
-                this.NotifyPropertyChange();
+                if (heightSegments != value)
+                {
+                    this.heightSegments = value;
+                    this.NotifyPropertyChange();
+                }
             }
         }
 
