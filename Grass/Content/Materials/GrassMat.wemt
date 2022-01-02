@@ -1,0 +1,42 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: 2132a844-8a52-4725-bbc2-c5782b07e529
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 37bbb6cc-cfa5-4ebf-b4bb-958f62151a3a
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: d9d91c9a-06fe-4a72-8342-eb019b16cca6
+  Layer: b0eeb4f0-51cc-4b98-bb1a-32a5f4058073
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: TopColor
+      Type: Evergine.Mathematics.Vector4,Evergine.Mathematics
+      ValueByteArray: ZmbmPnE9Sj+amZk+AACAPw==
+    - Name: BottomColor
+      Type: Evergine.Mathematics.Vector4,Evergine.Mathematics
+      ValueByteArray: iYgIPqmoKD7BwEA9AACAPw==
+    - Name: BendRotationRandom
+      Type: System.Single
+      ValueByteArray: mpmZPg==
+    - Name: BladeWidth
+      Type: System.Single
+      ValueByteArray: CtejOw==
+    - Name: BladeWidthRandom
+      Type: System.Single
+      ValueByteArray: bxKDOg==
+    - Name: BladeHeight
+      Type: System.Single
+      ValueByteArray: j8J1PQ==
+    - Name: BladeHeightRandom
+      Type: System.Single
+      ValueByteArray: CtejPA==
+  Samplers: null
+  Textures: null
+Profiles: {}

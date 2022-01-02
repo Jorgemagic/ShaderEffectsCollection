@@ -1,0 +1,33 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 6ec438ab-a2d8-41ac-aa2b-195ba371445d
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: 53e726ad-d45b-4b83-b798-582f0efedaa7
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 3a9d2528-f61d-486a-b60e-08a0c527c3c6
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: DefaultMaterial
+        Item2: 877ee850-e80b-42de-8d02-2ee2278062d2
+    Nodes:
+      - RootNode
+      - RootNode.Post
+      - RootNode.Plank
+      - RootNode.Plank001
+      - RootNode.Plank002
+      - RootNode.Plank003
+      - RootNode.Plank004
+      - RootNode.Post002
+SwapWindingOrder: false
