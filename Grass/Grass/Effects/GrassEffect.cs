@@ -41,6 +41,18 @@ namespace Grass.Effects
             }
         }
         
+        public float PerFrame_Time
+        {
+            get
+            {
+                return this.material.CBuffers[1].GetBufferData<System.Single>(0);
+            }
+            set
+            {
+				this.material.CBuffers[1].SetBufferData(value, 0);
+            }
+        }
+
         public Color Parameters_TopColor
         {
             get
@@ -51,10 +63,10 @@ namespace Grass.Effects
             set
             {
                 var cVector = value.ToVector4();
-				this.material.CBuffers[1].SetBufferData(cVector, 0);
+                this.material.CBuffers[1].SetBufferData(cVector, 0);
             }
         }
-        
+
         public Color Parameters_BottomColor
         {
             get
@@ -65,19 +77,19 @@ namespace Grass.Effects
             set
             {
                 var cVector = value.ToVector4();
-				this.material.CBuffers[1].SetBufferData(cVector, 16);
+                this.material.CBuffers[1].SetBufferData(cVector, 16);
             }
         }
-        
+
         public float Parameters_BendRotationRandom
         {
             get
             {
-                return this.material.CBuffers[1].GetBufferData<System.Single>(32);
+                return this.material.CBuffers[2].GetBufferData<System.Single>(32);
             }
             set
             {
-				this.material.CBuffers[1].SetBufferData(value, 32);
+				this.material.CBuffers[2].SetBufferData(value, 32);
             }
         }
         
@@ -85,11 +97,11 @@ namespace Grass.Effects
         {
             get
             {
-                return this.material.CBuffers[1].GetBufferData<System.Single>(36);
+                return this.material.CBuffers[2].GetBufferData<System.Single>(36);
             }
             set
             {
-				this.material.CBuffers[1].SetBufferData(value, 36);
+				this.material.CBuffers[2].SetBufferData(value, 36);
             }
         }
         
@@ -97,11 +109,11 @@ namespace Grass.Effects
         {
             get
             {
-                return this.material.CBuffers[1].GetBufferData<System.Single>(40);
+                return this.material.CBuffers[2].GetBufferData<System.Single>(40);
             }
             set
             {
-				this.material.CBuffers[1].SetBufferData(value, 40);
+				this.material.CBuffers[2].SetBufferData(value, 40);
             }
         }
         
@@ -109,11 +121,11 @@ namespace Grass.Effects
         {
             get
             {
-                return this.material.CBuffers[1].GetBufferData<System.Single>(44);
+                return this.material.CBuffers[2].GetBufferData<System.Single>(44);
             }
             set
             {
-				this.material.CBuffers[1].SetBufferData(value, 44);
+				this.material.CBuffers[2].SetBufferData(value, 44);
             }
         }
         
@@ -121,11 +133,83 @@ namespace Grass.Effects
         {
             get
             {
-                return this.material.CBuffers[1].GetBufferData<System.Single>(48);
+                return this.material.CBuffers[2].GetBufferData<System.Single>(48);
             }
             set
             {
-				this.material.CBuffers[1].SetBufferData(value, 48);
+				this.material.CBuffers[2].SetBufferData(value, 48);
+            }
+        }
+        
+        public Evergine.Mathematics.Vector2 Parameters_WindFrenquency
+        {
+            get
+            {
+                return this.material.CBuffers[2].GetBufferData<Evergine.Mathematics.Vector2>(52);
+            }
+            set
+            {
+				this.material.CBuffers[2].SetBufferData(value, 52);
+            }
+        }
+        
+        public float Parameters_WindStrength
+        {
+            get
+            {
+                return this.material.CBuffers[2].GetBufferData<System.Single>(60);
+            }
+            set
+            {
+				this.material.CBuffers[2].SetBufferData(value, 60);
+            }
+        }
+        
+        public Evergine.Mathematics.Vector2 Parameters_WindTextureSize
+        {
+            get
+            {
+                return this.material.CBuffers[2].GetBufferData<Evergine.Mathematics.Vector2>(64);
+            }
+            set
+            {
+				this.material.CBuffers[2].SetBufferData(value, 64);
+            }
+        }
+        
+        public Evergine.Mathematics.Vector2 Parameters_WindTextureOffset
+        {
+            get
+            {
+                return this.material.CBuffers[2].GetBufferData<Evergine.Mathematics.Vector2>(72);
+            }
+            set
+            {
+				this.material.CBuffers[2].SetBufferData(value, 72);
+            }
+        }
+        
+        public Evergine.Common.Graphics.Texture WindDistortion
+        {
+            get
+            {
+                return this.material.TextureSlots[0].Texture;
+            }
+            set
+            {
+				this.material.SetTexture(value, 0);
+            }
+        }
+        
+        public Evergine.Common.Graphics.SamplerState WindSampler
+        {
+            get
+            {
+                return this.material.SamplerSlots[0].Sampler;
+            }
+            set
+            {
+				this.material.SetSampler(value, 0);
             }
         }
     }

@@ -6,8 +6,13 @@
 	{
 		float4x4 WorldViewProj	: packoffset(c0);	[WorldViewProjection]
 	};
+	
+	cbuffer PerFrame : register(b1)
+	{
+		float Time				: packoffset(c0); [Time]
+	}
 
-	cbuffer Parameters : register(b1)
+	cbuffer Parameters : register(b2)
 	{
 		float4 TopColor			: packoffset(c0);   [Default(0.0,1.0,0.0, 1.0)]
 		float4 BottomColor		: packoffset(c1);   [Default(1.0, 0.0, 0.0,1.0)]
@@ -16,7 +21,14 @@
 		float BladeWidthRandom  : packoffset(c2.z); [Default(0.001)]
 		float BladeHeight		: packoffset(c2.w); [Default(0.06)]
 		float BladeHeightRandom : packoffset(c3.x); [Default(0.02)]
+		float2 WindFrenquency	: packoffset(c3.y); [Default(0.05,0.05)]
+		float WindStrength		: packoffset(c3.w); [Default(1.0)]
+		float2 WindTextureSize  : packoffset(c4.x); [Default(512, 512)]
+		float2 WindTextureOffset: packoffset(c4.z); [Default(0.0, 0.0)]		
 	};
+	
+	Texture2D WindDistortion : register(t0);
+	SamplerState WindSampler : register(s0);
 
 [End_ResourceLayout]
 
@@ -103,13 +115,20 @@
 		float4 pos = input[0].position;
 		float3x3 facingRotationMatrix = AngleAxis3x3(rand(pos.xy) * (PI*2), float3(0, 0, 1));
 		float3x3 bendRotationMatrix = AngleAxis3x3(rand(pos.zx) * BendRotationRandom * PI * 0.5, float3(-1, 0, 0));
-		float3x3 transformationMatrix = mul(mul(tangentToLocal, facingRotationMatrix), bendRotationMatrix);
+		
+		float2 uv  = pos.xz * WindTextureSize + WindTextureOffset + WindFrenquency * Time;
+		float2 windSample = (WindDistortion.SampleLevel(WindSampler, uv, 0).xy * 2 -1) * WindStrength;
+		float3 wind = normalize(float3(windSample.x, windSample.y, 0));
+		float3x3 windRotation = AngleAxis3x3(PI * windSample, wind);
+		
+		float3x3 transformationMatrix = mul(mul(mul(tangentToLocal, windRotation), facingRotationMatrix), bendRotationMatrix);
+		float3x3 transformationMatrixFacing = mul(tangentToLocal, facingRotationMatrix);
 
 		float height = (rand(pos.zx) * 2 - 1) * BladeHeightRandom + BladeHeight;
 		float width = (rand(pos.xy) * 2 - 1) * BladeWidthRandom + BladeWidth;
 		
-		triStream.Append(VertexOutput(pos + mul(transformationMatrix, float3(width, 0, 0)), float2(0,0)));		
-		triStream.Append(VertexOutput(pos + mul(transformationMatrix, float3(-width, 0, 0)), float2(1,0)));		
+		triStream.Append(VertexOutput(pos + mul(transformationMatrixFacing, float3(width, 0, 0)), float2(0,0)));		
+		triStream.Append(VertexOutput(pos + mul(transformationMatrixFacing, float3(-width, 0, 0)), float2(1,0)));		
 		triStream.Append(VertexOutput(pos + mul(transformationMatrix, float3(0, 0, height)), float2(0.5,1)));
 	}
 

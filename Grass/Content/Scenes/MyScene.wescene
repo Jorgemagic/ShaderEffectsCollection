@@ -205,7 +205,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: f74afac4-c44a-4785-a117-cb239c8ddc5c
+        Material: 5a16ab34-5893-467d-bc9f-37c26766803f
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
         Diameter: 1.0
@@ -264,9 +264,9 @@ Items:
           Z: 5.0
       - !HeightMap.Components.SingleMeshPlane,Grass
         Id: 07036c12-be4e-4d9c-b52d-73406683f012
-        HeightSegments: 50
+        HeightSegments: 100
         IsEnabled: true
-        WidthSegments: 50
+        WidthSegments: 100
       - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
         Id: 2935b46f-0bb5-4ecb-8e28-d81c3855f9bd
         AsignedTo: Default
@@ -373,8 +373,8 @@ Items:
               Z: -2.08063149
             LocalScale:
               X: 1.0
-              Y: 0.99999994
-              Z: 0.99999994
+              Y: 1.0
+              Z: 1.0
           - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
             Id: 5cb25d24-b935-41b3-b707-7c00b12be7f0
             AsignedTo: DefaultMaterial
@@ -405,7 +405,7 @@ Items:
             IsEnabled: true
             LocalOrientation:
               W: 1.0
-              X: 8.14603425E-08
+              X: 0.0
               Y: 0.0
               Z: 0.0
             LocalPosition:
@@ -619,8 +619,8 @@ Items:
               Z: -2.08063149
             LocalScale:
               X: 1.0
-              Y: 0.99999994
-              Z: 0.99999994
+              Y: 1.0
+              Z: 1.0
           - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
             Id: 474e8f9c-682d-4cd3-ac2f-0b1ccd437279
             AsignedTo: DefaultMaterial
