@@ -1,0 +1,34 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 74fe0753-be07-48d8-bcb3-2ef57ab0f87b
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: 2215a245-0af9-4ebb-a1c1-9b789fb625a8
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 4dc61ab7-158c-4ae1-947a-cb4b7fc147e0
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: BicycleBase.001
+        Item2: e75ceb44-5383-48dc-9143-9a3bfd275828
+      - Item1: Chain.001
+        Item2: b68d7e96-37ea-41f1-b4ed-8d1a7ce54bf1
+    Nodes:
+      - RootNode (gltf orientation matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).0b169965080f4e778c47af4b069540d0_fbx
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).0b169965080f4e778c47af4b069540d0_fbx.RootNode
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).0b169965080f4e778c47af4b069540d0_fbx.RootNode.Bicycle
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).0b169965080f4e778c47af4b069540d0_fbx.RootNode.Bicycle.Bicycle_BicycleBase_001_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).0b169965080f4e778c47af4b069540d0_fbx.RootNode.Bicycle.Bicycle_Chain_001_0
+SwapWindingOrder: false

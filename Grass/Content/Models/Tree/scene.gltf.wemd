@@ -1,0 +1,35 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 21f6896d-9282-4f2c-a005-be69ae0726f4
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: b48e4c81-2041-47b2-8f5e-d5646d99accd
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 4a35b40d-83dc-440a-b4af-cd875666ac2c
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: Material0
+        Item2: 2198c804-4d8b-4fde-9703-0e522f9df639
+    Nodes:
+      - Sketchfab_model
+      - Sketchfab_model.sketchfabTemp_obj_fbx
+      - Sketchfab_model.sketchfabTemp_obj_fbx.RootNode
+      - Sketchfab_model.sketchfabTemp_obj_fbx.RootNode.Stereo textured mesh
+      - Sketchfab_model.sketchfabTemp_obj_fbx.RootNode.Stereo textured mesh.Stereo textured mesh_Material0_0
+      - Sketchfab_model.sketchfabTemp_obj_fbx.RootNode.Stereo textured mesh.Stereo textured mesh_Material0_0_001
+      - Sketchfab_model.sketchfabTemp_obj_fbx.RootNode.Stereo textured mesh.Stereo textured mesh_Material0_0_002
+      - Sketchfab_model.sketchfabTemp_obj_fbx.RootNode.Stereo textured mesh.Stereo textured mesh_Material0_0_003
+      - Sketchfab_model.sketchfabTemp_obj_fbx.RootNode.Stereo textured mesh.Stereo textured mesh_Material0_0_004
+      - Sketchfab_model.sketchfabTemp_obj_fbx.RootNode.Stereo textured mesh.Stereo textured mesh_Material0_0_005
+SwapWindingOrder: false

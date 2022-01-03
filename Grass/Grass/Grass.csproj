@@ -11,6 +11,7 @@
     <PackageReference Include="Evergine.Common" Version="2021.11.17.2-preview" />
     <PackageReference Include="Evergine.Components" Version="2021.11.17.2-preview" />
     <PackageReference Include="Evergine.Framework" Version="2021.11.17.2-preview" />
+	<PackageReference Include="Evergine.ImGui" Version="2021.11.17.2-preview" />
     <PackageReference Include="Evergine.Mathematics" Version="2021.11.17.2-preview" />
     <PackageReference Include="Evergine.Platform" Version="2021.11.17.2-preview" />
     <PackageReference Include="Evergine.Bullet" Version="2021.11.17.2-preview" />

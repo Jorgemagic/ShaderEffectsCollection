@@ -1,0 +1,64 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 181d880f-a702-4a94-a605-2efdcc4e1ea7
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: 3c6d6172-940e-4996-b292-94f723fe015c
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: a2ad802a-5147-4c2d-89ed-a814c4cea2c6
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: Wood_zabor
+        Item2: 07669a46-5ee1-4f4c-88f4-60b0a4e928d5
+      - Item1: Default
+        Item2: 1f401f28-31de-4926-b355-ea3934652d56
+      - Item1: Column
+        Item2: c5a80c53-2479-4152-909e-2b6a7c1196b2
+    Nodes:
+      - RootNode (gltf orientation matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix)
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.Wood_Zabor
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.Wood_Zabor.Wood_Zabor_Wood_zabor_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.Column
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.Column._Node_7
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.Column._Node_7.Column_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.vorota
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.vorota._Node_10
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.vorota._Node_10.vorota_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli._Node_13
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli._Node_13.petli_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli_2
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli_2._Node_16
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli_2._Node_16.petli_2_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.zamok
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.zamok._Node_19
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.zamok._Node_19.zamok_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli001
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli001._Node_22
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli001._Node_22.petli001_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli002
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli002._Node_25
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli002._Node_25.petli002_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli003
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli003._Node_28
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli003._Node_28.petli003_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli_003
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli_003._Node_31
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.petli_003._Node_31.petli_003_Default_0
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.Column001
+      - RootNode (gltf orientation matrix).RootNode (model correction matrix).822b7e3658974290a1658c4990a708f1_fbx.RootNode.Column001.Column001_Column_0
+SwapWindingOrder: false

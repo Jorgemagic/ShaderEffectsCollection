@@ -4,7 +4,7 @@ using Evergine.Components.Primitives;
 using Evergine.Mathematics;
 using System;
 
-namespace HeightMap.Components
+namespace Grass.Components
 {
     public class SingleMeshPlane : PrimitiveBaseMesh
     {
