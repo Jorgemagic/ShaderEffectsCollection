@@ -189,6 +189,30 @@ namespace Grass.Effects
             }
         }
         
+        public float Parameters_BladeForward
+        {
+            get
+            {
+                return this.material.CBuffers[2].GetBufferData<System.Single>(80);
+            }
+            set
+            {
+				this.material.CBuffers[2].SetBufferData(value, 80);
+            }
+        }
+        
+        public float Parameters_BladeCurvature
+        {
+            get
+            {
+                return this.material.CBuffers[2].GetBufferData<System.Single>(84);
+            }
+            set
+            {
+				this.material.CBuffers[2].SetBufferData(value, 84);
+            }
+        }
+        
         public Evergine.Common.Graphics.Texture WindDistortion
         {
             get

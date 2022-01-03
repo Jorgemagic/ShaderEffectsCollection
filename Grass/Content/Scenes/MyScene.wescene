@@ -205,7 +205,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 5a16ab34-5893-467d-bc9f-37c26766803f
+        Material: 6aa147a5-1db1-4d64-869a-ba6142dbbfe0
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
         Diameter: 1.0
@@ -250,10 +250,10 @@ Items:
         Id: f8ee2bd3-d076-4d94-8587-849640b3ccef
         IsEnabled: true
         LocalOrientation:
-          W: 1.0
+          W: 0.707106769
           X: 0.0
-          Y: 0.0
-          Z: 0.0
+          Y: 0.707106769
+          Z: -0.0
         LocalPosition:
           X: 0.0
           Y: 0.0

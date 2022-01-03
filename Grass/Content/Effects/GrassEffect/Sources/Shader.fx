@@ -14,17 +14,19 @@
 
 	cbuffer Parameters : register(b2)
 	{
-		float4 TopColor			: packoffset(c0);   [Default(0.0,1.0,0.0, 1.0)]
-		float4 BottomColor		: packoffset(c1);   [Default(1.0, 0.0, 0.0,1.0)]
-		float BendRotationRandom: packoffset(c2.x); [Default(0.3)]
-		float BladeWidth		: packoffset(c2.y); [Default(0.005)]
-		float BladeWidthRandom  : packoffset(c2.z); [Default(0.001)]
-		float BladeHeight		: packoffset(c2.w); [Default(0.06)]
-		float BladeHeightRandom : packoffset(c3.x); [Default(0.02)]
-		float2 WindFrenquency	: packoffset(c3.y); [Default(0.05,0.05)]
-		float WindStrength		: packoffset(c3.w); [Default(1.0)]
-		float2 WindTextureSize  : packoffset(c4.x); [Default(512, 512)]
-		float2 WindTextureOffset: packoffset(c4.z); [Default(0.0, 0.0)]		
+		float4 TopColor			  : packoffset(c0);   [Default(0.0,1.0,0.0, 1.0)]
+		float4 BottomColor		  : packoffset(c1);   [Default(1.0, 0.0, 0.0,1.0)]
+		float BendRotationRandom  : packoffset(c2.x); [Default(0.3)]
+		float BladeWidth		  : packoffset(c2.y); [Default(0.005)]
+		float BladeWidthRandom    : packoffset(c2.z); [Default(0.001)]
+		float BladeHeight		  : packoffset(c2.w); [Default(0.06)]
+		float BladeHeightRandom   : packoffset(c3.x); [Default(0.02)]
+		float2 WindFrenquency	  : packoffset(c3.y); [Default(0.05,0.05)]
+		float WindStrength		  : packoffset(c3.w); [Default(1.0)]
+		float2 WindTextureSize    : packoffset(c4.x); [Default(512, 512)]
+		float2 WindTextureOffset  : packoffset(c4.z); [Default(0.0, 0.0)]		
+		float BladeForward		  : packoffset(c5.x); [Default(0.03)]
+		float BladeCurvature	  : packoffset(c5.y); [Default(2)]
 	};
 	
 	Texture2D WindDistortion : register(t0);
@@ -37,6 +39,7 @@
 	[Entrypoints VS=VS GS=GS PS=PS]
 
 	static const float PI = 3.14159265f;
+	#define BLADE_SEGMENTS 3
 
 	struct VS_IN
 	{
@@ -93,13 +96,21 @@
 	        t * x * z - s * y,  t * y * z + s * x,  t * z * z + c
 	    );
 	}
-	
-	float rand (float2 uv)
+	   
+    float rand (float2 v)
     {
-        return frac(sin(dot(uv,float2(12.9898,78.233)))*43758.5453123);
+        return frac(sin(dot(v,float2(12.9898,78.233)))*43758.5453123);
     }
 	
-	[maxvertexcount(3)]
+	PS_IN GenerateGrassVertex(float3 vertexPosition, float width, float height, float forward, float2 uv, float3x3 transformMatrix)
+	{
+		float3 tangentPoint = float3(width, forward, height);
+	
+		float3 localPosition = vertexPosition + mul(transformMatrix, tangentPoint);
+		return VertexOutput(localPosition, uv);
+	}
+	
+	[maxvertexcount(BLADE_SEGMENTS * 2 + 1)]
 	void GS(triangle GS_IN input[3] : SV_POSITION, inout TriangleStream<PS_IN> triStream)
 	{
 		float3 vNormal = input[0].normal;
@@ -126,10 +137,22 @@
 
 		float height = (rand(pos.zx) * 2 - 1) * BladeHeightRandom + BladeHeight;
 		float width = (rand(pos.xy) * 2 - 1) * BladeWidthRandom + BladeWidth;
+				
+		float forward = rand(pos.yz) * BladeForward;
+		for (int i =0 ; i < BLADE_SEGMENTS; i++)
+		{
+			float t = i / (float)BLADE_SEGMENTS;
+			float segmentHeight = height * t;
+			float segmentWidth = width * (1-t);
+			float segmentForward = pow(t, BladeCurvature) * forward;
+			
+			float3x3 transformMatrix = i == 0 ? transformationMatrixFacing : transformationMatrix;
+			
+			triStream.Append(GenerateGrassVertex(pos, segmentWidth, segmentHeight, segmentForward, float2(0,t), transformMatrix));		
+			triStream.Append(GenerateGrassVertex(pos, -segmentWidth, segmentHeight, segmentForward, float2(1,t), transformMatrix));						
+		}
 		
-		triStream.Append(VertexOutput(pos + mul(transformationMatrixFacing, float3(width, 0, 0)), float2(0,0)));		
-		triStream.Append(VertexOutput(pos + mul(transformationMatrixFacing, float3(-width, 0, 0)), float2(1,0)));		
-		triStream.Append(VertexOutput(pos + mul(transformationMatrix, float3(0, 0, height)), float2(0.5,1)));
+		triStream.Append(GenerateGrassVertex(pos, 0, height, forward, float2(0.5,1), transformationMatrix));
 	}
 
 	#if !GAMMA_COLORSPACE

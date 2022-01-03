@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 36d4a53c-b994-4784-b5e8-201ea9ee30da
+  Id: cbade964-d765-421e-8c6d-96de7a6d061e
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: d9d91c9a-06fe-4a72-8342-eb019b16cca6
@@ -39,7 +39,7 @@ MaterialInfo:
       ValueByteArray: j8J1PQ==
     - Name: BladeHeightRandom
       Type: System.Single
-      ValueByteArray: CtejPA==
+      ValueByteArray: CtcjPA==
     - Name: WindFrenquency
       Type: Evergine.Mathematics.Vector2,Evergine.Mathematics
       ValueByteArray: j8L1PI/C9Tw=
@@ -52,6 +52,12 @@ MaterialInfo:
     - Name: WindTextureOffset
       Type: Evergine.Mathematics.Vector2,Evergine.Mathematics
       ValueByteArray: CtcjPArXIzw=
+    - Name: BladeForward
+      Type: System.Single
+      ValueByteArray: j8L1PA==
+    - Name: BladeCurvature
+      Type: System.Single
+      ValueByteArray: AADAPw==
   Samplers:
     - ID: 9018edf8-ea96-4721-bf83-5561942432e0
       Name: WindSampler
