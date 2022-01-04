@@ -57,13 +57,13 @@ namespace Grass.Effects
         {
             get
             {
-                var cVector = this.material.CBuffers[1].GetBufferData<Evergine.Mathematics.Vector4>(0);
+                var cVector = this.material.CBuffers[2].GetBufferData<Evergine.Mathematics.Vector4>(0);
                 return Color.FromVector4(ref cVector);
             }
             set
             {
                 var cVector = value.ToVector4();
-                this.material.CBuffers[1].SetBufferData(cVector, 0);
+                this.material.CBuffers[2].SetBufferData(cVector, 0);
             }
         }
 
@@ -71,13 +71,13 @@ namespace Grass.Effects
         {
             get
             {
-                var cVector = this.material.CBuffers[1].GetBufferData<Evergine.Mathematics.Vector4>(16);
+                var cVector = this.material.CBuffers[2].GetBufferData<Evergine.Mathematics.Vector4>(16);
                 return Color.FromVector4(ref cVector);
             }
             set
             {
                 var cVector = value.ToVector4();
-                this.material.CBuffers[1].SetBufferData(cVector, 16);
+                this.material.CBuffers[2].SetBufferData(cVector, 16);
             }
         }
 

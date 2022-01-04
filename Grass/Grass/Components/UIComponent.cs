@@ -1,4 +1,5 @@
-﻿using Evergine.Components.Graphics3D;
+﻿using Evergine.Common.Graphics;
+using Evergine.Components.Graphics3D;
 using Evergine.Framework;
 using Evergine.Mathematics;
 using Grass.Effects;
@@ -38,6 +39,11 @@ namespace Grass.Components
             bool postprocessing = this.Postprocessing.IsEnabled;
             ImGui.Checkbox("Postprocessing Enabled", ref postprocessing);
             this.Postprocessing.IsEnabled = postprocessing;
+
+            ImGui.Separator();
+
+            this.grassMaterial.Parameters_TopColor = this.ColorPicker("Blade Top", this.grassMaterial.Parameters_TopColor);
+            this.grassMaterial.Parameters_BottomColor = this.ColorPicker("Blade Bottom", this.grassMaterial.Parameters_BottomColor);
 
             ImGui.Separator();
 
@@ -109,6 +115,16 @@ namespace Grass.Components
             ImGui.SliderFloat2(name, ref av, min, max);
 
             return new Vector2(av.X, av.Y);
+        }
+
+        private Color ColorPicker(string name, Color c)
+        {
+            var v = c.ToVector3();
+            System.Numerics.Vector3 av = new System.Numerics.Vector3(v.X, v.Y, v.Z);            
+            ImGui.ColorEdit3(name, ref av);
+
+            v.X = av.X;v.Y = av.Y;v.Z = av.Z;
+            return Color.FromVector3(ref v);
         }
     }
 }

@@ -53,9 +53,9 @@ Items:
           Y: -0.98747009
           Z: -0.08931458
         LocalPosition:
-          X: -1.10338342
-          Y: 0.849588275
-          Z: -1.52933776
+          X: -0.72633636
+          Y: 0.904849827
+          Z: -1.94360995
         LocalScale:
           X: 1.0
           Y: 1.0
@@ -205,7 +205,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 0a33e272-74a5-4bc9-95cc-8e835c788e7c
+        Material: 202eb9f5-f0a6-4e7b-8f12-aed8207c8a8d
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
         Diameter: 1.0
