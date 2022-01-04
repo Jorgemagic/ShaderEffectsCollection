@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 2ea3b160-14e3-4296-a761-e610e81f5d2b
+  Id: 79b42e1b-85ce-4943-ba59-03797fafb6de
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: d9d91c9a-06fe-4a72-8342-eb019b16cca6
@@ -21,7 +21,7 @@ MaterialInfo:
       ValueByteArray: AAAAAA==
     - Name: TopColor
       Type: Evergine.Mathematics.Vector4,Evergine.Mathematics
-      ValueByteArray: ZmbmPnE9Sj+amZk+AACAPw==
+      ValueByteArray: goEBP7e2Nj/FxMQ+AACAPw==
     - Name: BottomColor
       Type: Evergine.Mathematics.Vector4,Evergine.Mathematics
       ValueByteArray: iYgIPqmoKD7BwEA9AACAPw==
@@ -54,7 +54,7 @@ MaterialInfo:
       ValueByteArray: CtcjPArXIzw=
     - Name: BladeForward
       Type: System.Single
-      ValueByteArray: j8L1PA==
+      ValueByteArray: 7FG4vQ==
     - Name: BladeCurvature
       Type: System.Single
       ValueByteArray: AADAPw==

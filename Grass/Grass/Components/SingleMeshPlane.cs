@@ -69,22 +69,32 @@ namespace Grass.Components
                     float heightStep = h * (1.0f / heightSegments);
                     float heightNextStep = ((h + 1) * (1.0f / heightSegments));
 
+
+                    float h1Offset = 0;
+                    float h2Offset = (1.0f / heightSegments) / 2;
+                    if (w % 2 != 0)
+                    {
+                        h1Offset = (1.0f / heightSegments) / 2;
+                        h2Offset = 0;
+                    }
+
+                    
                     // First Triangle
                     builder.AddVertex(
-                                      new Vector3(-0.5f + widthStep, 0, -0.5f + heightStep), // Position
+                                      new Vector3(-0.5f + widthStep, 0, -0.5f + heightStep + h1Offset), // Position
                                       Vector3.Up, // Normal,
                                       new Vector2(widthStep, heightStep) // UV
                                       );
 
 
                     builder.AddVertex(
-                                      new Vector3(-0.5f + widthNextStep, 0, -0.5f + heightNextStep), // Position
+                                      new Vector3(-0.5f + widthNextStep, 0, -0.5f + heightNextStep + h2Offset), // Position
                                       Vector3.Up, // Normal,
                                       new Vector2(widthNextStep, heightNextStep) // UV
                                       );
 
                     builder.AddVertex(
-                                      new Vector3(-0.5f + widthStep, 0, -0.5f + heightNextStep), // Position
+                                      new Vector3(-0.5f + widthStep, 0, -0.5f + heightNextStep + h1Offset), // Position
                                       Vector3.Up, // Normal,
                                       new Vector2(widthStep, heightNextStep) // UV
                                       );
@@ -95,19 +105,19 @@ namespace Grass.Components
 
                     // Second Triangle
                     builder.AddVertex(
-                                      new Vector3(-0.5f + widthStep, 0, -0.5f + heightStep), // Position
+                                      new Vector3(-0.5f + widthStep, 0, -0.5f + heightStep + h1Offset), // Position
                                       Vector3.Up, // Normal,
                                       new Vector2(widthStep, heightStep) // UV
                                       );
 
                     builder.AddVertex(
-                                      new Vector3(-0.5f + widthNextStep, 0, -0.5f + heightStep), // Position
+                                      new Vector3(-0.5f + widthNextStep, 0, -0.5f + heightStep + h2Offset), // Position
                                       Vector3.Up, // Normal,
                                       new Vector2(widthNextStep, heightStep) // UV
                                       );
 
                     builder.AddVertex(
-                                     new Vector3(-0.5f + widthNextStep, 0, -0.5f + heightNextStep), // Position
+                                     new Vector3(-0.5f + widthNextStep, 0, -0.5f + heightNextStep + h2Offset), // Position
                                      Vector3.Up, // Normal,
                                      new Vector2(widthNextStep, heightNextStep) // UV
                                      );

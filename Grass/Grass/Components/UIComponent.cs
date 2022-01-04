@@ -88,7 +88,7 @@ namespace Grass.Components
 
             // Blade Forward
             float bladeForward = this.grassMaterial.Parameters_BladeForward;
-            ImGui.SliderFloat("Blade Forward", ref bladeForward, 0.0f, 0.1f);
+            ImGui.SliderFloat("Blade Forward", ref bladeForward, -0.1f, 0.1f);
             this.grassMaterial.Parameters_BladeForward = bladeForward;
 
             // Blade Curvature
