@@ -45,3 +45,16 @@ float3 getNormal(float2 uv, float texelSize)
 }
 ```
 I found a good reference for creation terrain based on heightmap in the paper **Terrain Rendering in Frostbite** from SIGGRAPH 2007 that you can download [here](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.161.8979&rep=rep1&type=pdf)
+
+## [Grass shader](Grass/)
+[![Grass shader Video](Images/GrassVideo.png)](https://www.youtube.com/watch?v=yJBb9ijypsI)
+
+For this demo, I created a SingleMeshPlane that creates a plane with a maximum of 100 horizontal and vertical segments with the following pattern.
+
+<img src="Images/grassMeshPattern.png" alt="Grass mesh pattern" width="300"/>
+
+Using a geometry shader I created a blade of grass per each mesh vertex. The blade grass is a shape with several segments to allow create a curve blade.
+
+<img src="https://roystan.net/media/tutorials/grass/grass-construction.gif" alt="Blade mesh" width="300"/>
+
+This demo is based on this great [post](https://roystan.net/articles/grass-shader.html) by Roystan.
