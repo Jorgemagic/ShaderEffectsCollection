@@ -1,0 +1,24 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: fc441776-934a-4782-9b45-f89f5106ab41
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 2811467e-771d-4f31-9a1e-699191f4e353
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: 37dd96c3-cb70-4805-8fd9-c6899334afbd
+  Layer: f409d1df-572e-4efb-84ef-db6335e61fe1
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: Time
+      Type: System.Single
+      ValueByteArray: AAAAAA==
+  Samplers: null
+  Textures: null
+Profiles: {}
