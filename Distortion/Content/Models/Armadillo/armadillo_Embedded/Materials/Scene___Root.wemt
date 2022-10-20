@@ -1,12 +1,12 @@
 !Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
-Id: 7b5795da-e3c8-4e09-b37f-4a3b1bac60eb
+Id: a9b3de17-c6d6-4f61-b4df-d47fc3a1c877
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: c39e8c05-9dc0-4130-bb60-d08a3e275782
+  Id: cb95629a-bfc8-4e5d-8a2c-d989b83e14ae
   ActiveDirectives:
     - IBL
     - LIT
@@ -50,7 +50,7 @@ MaterialInfo:
       ValueByteArray: AAAAAAAAAAAAAAAAAAAAAA==
     - Name: BaseColor
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: uUsnOgAAAAAAAIA/
+      ValueByteArray: AAAAAGmggzwAAIA/
     - Name: Alpha
       Type: System.Single
       ValueByteArray: AACAPw==
@@ -59,7 +59,7 @@ MaterialInfo:
       ValueByteArray: AAAAAA==
     - Name: Roughness
       Type: System.Single
-      ValueByteArray: AAAAAA==
+      ValueByteArray: mpkZPw==
     - Name: Reflectance
       Type: System.Single
       ValueByteArray: AAAAPw==
