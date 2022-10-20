@@ -112,10 +112,10 @@ Items:
       - !Evergine.Framework.Graphics.PhotometricDirectionalLight,Evergine.Framework
         Id: 5f6768ca-a7e6-4ab7-82b2-d9b3c42d111f
         Color:
-          A: 255
-          B: 253
-          G: 248
-          R: 255
+          A: 0
+          B: 225
+          G: 238
+          R: 248
         ColorByTemperature: true
         DebugMode: false
         GammaDistribution: 0.800000012
@@ -124,10 +124,10 @@ Items:
         IsEnabled: true
         IsShadowEnabled: true
         LinearColor:
-          A: 1.0
-          B: 0.982790232
-          G: 0.943362474
-          R: 1.0
+          A: 0.0
+          B: 0.758807242
+          G: 0.862642348
+          R: 0.939133644
         ShadowBias: 0.00499999989
         ShadowDistance: 80.0
         ShadowOpacity: 1.0
@@ -168,7 +168,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: null
+        Material: fd7bcd35-0f7e-489e-8dcf-dcc458b2fb41
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224

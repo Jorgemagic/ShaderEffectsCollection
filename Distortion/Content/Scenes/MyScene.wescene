@@ -168,7 +168,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: ac47c133-fbe2-4d68-afd4-4aa5bccd325c
+        Material: 9e289c4e-1404-4635-85ea-9edfb085a677
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
