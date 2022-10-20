@@ -1,13 +1,14 @@
-﻿using Evergine.Components.Graphics3D;
+﻿using Evergine.Bindings.Imgui;
+using Evergine.Components.Graphics3D;
 using Evergine.Framework;
 using Evergine.Framework.Graphics;
 using Evergine.Framework.Services;
-using ImGuiNET;
+using Evergine.UI;
 using System;
 
 namespace HeightMap.Components
 {
-    public class UIComponent : Behavior
+    public unsafe class UIComponent : Behavior
     {
         [BindService]
         private AssetsService assetsService;
@@ -38,12 +39,15 @@ namespace HeightMap.Components
         }
 
         protected override void Update(TimeSpan gameTime)
-        {
-            ImGui.Begin("Settings");
+        {            
+            bool open = false;
+            ImguiNative.igBegin("Settings", open.Pointer(), ImGuiWindowFlags.None);
 
             // Mode
             string[] elements = new string[] { "Meshes", "Normals", "Shading" };
-            ImGui.Combo("Mode", ref this.mode, elements, elements.Length, 20);
+            int currentMode = this.mode;
+            ImguiNative.igCombo_Str_arr("Mode", &currentMode, elements, elements.Length, 20);
+            this.mode = currentMode;
 
             if (this.lastMode != mode)
             {
@@ -65,16 +69,15 @@ namespace HeightMap.Components
 
             // Width segments
             int widthSegments = meshPlane.WidthSegments;
-            ImGui.SliderInt("Width Segments", ref widthSegments, 1, 500);
+            ImguiNative.igSliderInt("Width Segments", &widthSegments, 1, 500, string.Empty, ImGuiSliderFlags.None);
             meshPlane.WidthSegments = widthSegments;
 
             // Height segments
             int heightSegments = meshPlane.HeightSegments;
-            ImGui.SliderInt("Height Segments", ref heightSegments, 1, 500);
+            ImguiNative.igSliderInt("Height Segments", &heightSegments, 1, 500, string.Empty, ImGuiSliderFlags.None);
             meshPlane.HeightSegments = heightSegments;
 
-
-            ImGui.End();
+            ImguiNative.igEnd();
         }
     }
 }

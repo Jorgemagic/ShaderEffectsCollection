@@ -1,7 +1,8 @@
+!Evergine.Common.ProjectModel,Evergine.Common
 Packages:
   - Id: Evergine.Core
     LocalPath: null
-    Version: 2021.11.17.2-preview
+    Version: 2022.9.28.2
 Profiles:
   - AdditionalEffectTechniqueCombinations: SHADOW_SUPPORTED-SHADOWFILTER7
     AlphaCompressionFormat: BC3_UNorm

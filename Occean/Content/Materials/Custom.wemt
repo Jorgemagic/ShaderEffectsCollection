@@ -1,0 +1,54 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: bd3176bf-e9b7-4a53-94d2-59bff35b8d75
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 1f262cb3-d84a-4433-8c17-84741797546f
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: e6f4cfe6-5b5b-4492-a99c-37827ff74949
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: Time
+      Type: System.Single
+      ValueByteArray: AAAAAA==
+    - Name: Color
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAM3MzD0AAIA/
+    - Name: WaveA
+      Type: Evergine.Mathematics.Vector4,Evergine.Mathematics
+      ValueByteArray: AACAPwAAgD8AAAA/zczMPQ==
+    - Name: WaveB
+      Type: Evergine.Mathematics.Vector4,Evergine.Mathematics
+      ValueByteArray: AACAPwAAAACamZk+zcxMPQ==
+    - Name: WaveC
+      Type: Evergine.Mathematics.Vector4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAgD+amRk+zczMPA==
+    - Name: Amplitude
+      Type: System.Single
+      ValueByteArray: zcxMPQ==
+    - Name: Frequency
+      Type: System.Single
+      ValueByteArray: AACgQA==
+    - Name: Octaves
+      Type: System.Single
+      ValueByteArray: AABAQA==
+    - Name: Lacunarity
+      Type: System.Single
+      ValueByteArray: AACAPw==
+    - Name: Gain
+      Type: System.Single
+      ValueByteArray: zcxMPg==
+    - Name: Speed
+      Type: System.Single
+      ValueByteArray: AAAAPw==
+  Samplers: null
+  Textures: null
+Profiles: {}

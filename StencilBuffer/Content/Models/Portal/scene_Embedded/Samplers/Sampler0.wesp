@@ -1,11 +1,11 @@
 !Evergine.Assets.Exporters.SamplerMetaFile,Evergine.Assets
-Id: 8e94712d-59d8-4629-ab86-05c25d35fa55
+Id: 60eac756-3179-4c36-bbcf-fef6819c74a9
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
   SamplerInfo:
-    Id: 7735c167-4151-4986-85ff-bb787bd937d5
+    Id: 7242a0b0-39d4-4f1a-b8f0-deb4d30d75d6
     Description:
       AddressU: Wrap
       AddressV: Wrap

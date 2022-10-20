@@ -1,12 +1,12 @@
 !Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
-Id: a3583aa9-c56d-42d4-a74c-bfbc54872716
+Id: a7a04ed0-b05b-4094-a246-648af8515976
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: fe263bdf-813e-4285-9fc3-7652df444422
+  Id: bc6b1afa-0e5b-4841-aadb-26ac89af25a0
   ActiveDirectives:
     - LIT
     - IBL

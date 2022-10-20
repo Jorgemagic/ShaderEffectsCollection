@@ -1,15 +1,17 @@
-﻿using Evergine.Common.Graphics;
+﻿using Evergine.Bindings.Imgui;
+using Evergine.Common.Graphics;
 using Evergine.Components.Graphics3D;
 using Evergine.Framework;
 using Evergine.Mathematics;
+using Evergine.UI;
 using Grass.Effects;
-using ImGuiNET;
 using System;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace Grass.Components
 {
-    public class UIComponent : Behavior
+    public unsafe class UIComponent : Behavior
     {       
         [BindComponent]
         private SingleMeshPlane meshPlane;
@@ -34,96 +36,88 @@ namespace Grass.Components
 
         protected override void Update(TimeSpan gameTime)
         {
-            ImGui.Begin("Settings");
+            bool open = false;
+            ImguiNative.igBegin("Settings", open.Pointer(), ImGuiWindowFlags.None);
 
-            bool postprocessing = this.Postprocessing.IsEnabled;
-            ImGui.Checkbox("Postprocessing Enabled", ref postprocessing);
+            bool postprocessing = this.Postprocessing.IsEnabled;            
+            ImguiNative.igCheckbox("PostProcessing Enabled", postprocessing.Pointer());
             this.Postprocessing.IsEnabled = postprocessing;
-
-            ImGui.Separator();
+            
+            ImguiNative.igSeparator();
 
             this.grassMaterial.Parameters_TopColor = this.ColorPicker("Blade Top", this.grassMaterial.Parameters_TopColor);
             this.grassMaterial.Parameters_BottomColor = this.ColorPicker("Blade Bottom", this.grassMaterial.Parameters_BottomColor);
-
-            ImGui.Separator();
+            
+            ImguiNative.igSeparator();
 
             // Width segments
             int widthSegments = meshPlane.WidthSegments;
-            ImGui.SliderInt("Width Segments", ref widthSegments, 1, 100);
+            ImguiNative.igSliderInt("Width Segments", &widthSegments, 1, 100, string.Empty, ImGuiSliderFlags.None);
             meshPlane.WidthSegments = widthSegments;
 
             // Height segments
-            int heightSegments = meshPlane.HeightSegments;
-            ImGui.SliderInt("Height Segments", ref heightSegments, 1, 100);
+            int heightSegments = meshPlane.HeightSegments;            
+            ImguiNative.igSliderInt("Height Segments", &heightSegments, 1, 100, string.Empty, ImGuiSliderFlags.None);
             meshPlane.HeightSegments = heightSegments;
-
-            ImGui.Separator();           
+            
+            ImguiNative.igSeparator();
 
             // Blade Width
             float bladeWidth = this.grassMaterial.Parameters_BladeWidth;
-            ImGui.SliderFloat("Blade Width", ref bladeWidth, 0.0f, 0.02f);
+            ImguiNative.igSliderFloat("Blade Width", &bladeWidth, 0.0f, 0.02f, string.Empty, ImGuiSliderFlags.None);
             this.grassMaterial.Parameters_BladeWidth = bladeWidth;
 
             // Blade Width Random
             float bladeWidthRandom = this.grassMaterial.Parameters_BladeWidthRandom;
-            ImGui.SliderFloat("Blade Width Random", ref bladeWidthRandom, 0.0f, 0.01f);
+            ImguiNative.igSliderFloat("Blade Width Random", &bladeWidthRandom, 0.0f, 0.01f, string.Empty, ImGuiSliderFlags.None);
             this.grassMaterial.Parameters_BladeWidthRandom = bladeWidthRandom;
 
             // Blade Height
-            float bladeHeight = this.grassMaterial.Parameters_BladeHeight;
-            ImGui.SliderFloat("Blade Height", ref bladeHeight, 0.0f, 0.1f);
+            float bladeHeight = this.grassMaterial.Parameters_BladeHeight;            
+            ImguiNative.igSliderFloat("Blade Height", &bladeHeight, 0.0f, 0.1f, string.Empty, ImGuiSliderFlags.None);
             this.grassMaterial.Parameters_BladeHeight = bladeHeight;
 
             // Blade Height Random
-            float bladeHeightRandom = this.grassMaterial.Parameters_BladeHeightRandom;
-            ImGui.SliderFloat("Blade Height Random", ref bladeHeightRandom, 0.0f, 0.05f);
+            float bladeHeightRandom = this.grassMaterial.Parameters_BladeHeightRandom;            
+            ImguiNative.igSliderFloat("Blade Height Random", &bladeHeightRandom, 0.0f, 0.05f, string.Empty, ImGuiSliderFlags.None);
             this.grassMaterial.Parameters_BladeHeightRandom = bladeHeightRandom;
 
-            ImGui.Separator();
+            ImguiNative.igSeparator();
 
             // BendRotation Random
             float bend = this.grassMaterial.Parameters_BendRotationRandom;
-            ImGui.SliderFloat("Bend Rotation Random", ref bend, 0.0f, 1.0f);
+            ImguiNative.igSliderFloat("Bend Rotation Random", &bend, 0.0f, 1.0f, string.Empty, ImGuiSliderFlags.None);
             this.grassMaterial.Parameters_BendRotationRandom = bend;
 
             // Blade Forward
             float bladeForward = this.grassMaterial.Parameters_BladeForward;
-            ImGui.SliderFloat("Blade Forward", ref bladeForward, -0.1f, 0.1f);
+            ImguiNative.igSliderFloat("Blade Forward", &bladeForward, -0.1f, 0.1f, string.Empty, ImGuiSliderFlags.None);
             this.grassMaterial.Parameters_BladeForward = bladeForward;
 
             // Blade Curvature
-            float bladeCurvature = this.grassMaterial.Parameters_BladeCurvature;
-            ImGui.SliderFloat("Blade Curvature", ref bladeCurvature, 0.0f, 2.0f);
+            float bladeCurvature = this.grassMaterial.Parameters_BladeCurvature;            
+            ImguiNative.igSliderFloat("Blade Curvature", &bladeCurvature, 0.0f, 2.0f, string.Empty, ImGuiSliderFlags.None);
             this.grassMaterial.Parameters_BladeCurvature =  bladeCurvature;
 
-            ImGui.Separator();
+            ImguiNative.igSeparator();
 
             // Wind Frequency
-            this.grassMaterial.Parameters_WindFrenquency = SliderVector2("Wind Frequency", this.grassMaterial.Parameters_WindFrenquency, 0.0f, 0.1f);
+            Vector2 windFrenquency = this.grassMaterial.Parameters_WindFrenquency;
+            ImguiNative.igSliderFloat2("Wind Frequency", &windFrenquency, 0.0f, 0.1f, string.Empty, ImGuiSliderFlags.None);
+            this.grassMaterial.Parameters_WindFrenquency = windFrenquency;
 
             // Wind Strength
             float windStrength = this.grassMaterial.Parameters_WindStrength;
-            ImGui.SliderFloat("Wind Strength", ref windStrength, 0.0f, 0.1f);
+            ImguiNative.igSliderFloat("Wind Strength", &windStrength, 0.0f, 0.1f, string.Empty, ImGuiSliderFlags.None);
             this.grassMaterial.Parameters_WindStrength = windStrength;            
-
-            ImGui.End();
-        }
-
-        private Vector2 SliderVector2(string name, Vector2 v, float min, float max)
-        {
-            System.Numerics.Vector2 av = new System.Numerics.Vector2(v.X, v.Y);
-            ImGui.SliderFloat2(name, ref av, min, max);
-
-            return new Vector2(av.X, av.Y);
+            
+            ImguiNative.igEnd();
         }
 
         private Color ColorPicker(string name, Color c)
         {
             var v = c.ToVector3();
-            System.Numerics.Vector3 av = new System.Numerics.Vector3(v.X, v.Y, v.Z);            
-            ImGui.ColorEdit3(name, ref av);
-
-            v.X = av.X;v.Y = av.Y;v.Z = av.Z;
+            ImguiNative.igColorEdit3(name, &v, ImGuiColorEditFlags.None);
             return Color.FromVector3(ref v);
         }
     }

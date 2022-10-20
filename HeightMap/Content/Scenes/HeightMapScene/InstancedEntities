@@ -1,44 +1,6 @@
 !Evergine.Framework.Assets.AssetSources.Entities.SceneModel,Evergine.Framework
 Items:
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-    Name: SceneManagers
-    Tag: null
-    IsEnabled: true
-    IsStatic: false
-    Components:
-      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-        Id: 0f6ddfab-4895-4b2b-8896-b12b447325ac
-        IsEnabled: true
-        LocalOrientation:
-          W: 1.0
-          X: 0.0
-          Y: 0.0
-          Z: 0.0
-        LocalPosition:
-          X: 0.0
-          Y: 0.0
-          Z: 0.0
-        LocalScale:
-          X: 1.0
-          Y: 1.0
-          Z: 1.0
-      - !Evergine.Components.Graphics3D.EnvironmentComponent,Evergine.Framework
-        Id: 55628f09-d94c-4fcb-90bb-26dd4299cbbe
-        IntensityMultiplier: 1.0
-        IsEnabled: true
-        ReflectionProbe: dd15ff21-58cd-4300-8efe-62bc1ada12cd
-        Strategy: Automatically
-      - !Evergine.Components.Graphics3D.ShadowMapComponent,Evergine.Framework
-        Id: 68a6f3b9-5b7d-4fbd-be2b-9fe66aa8f93c
-        AutoDepthBounds: false
-        DirectionalResolution: Size_2048
-        IsEnabled: true
-        PunctualResolution: Size_512
-        ShadowFilter: PCF7x7
-        SpotResolution: Size_512
-    Children: []
-    Id: bdbed67e-3f21-49d8-9ec2-7d1ef1f85ae1
-  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: Camera
     Tag: null
     IsEnabled: true
@@ -65,7 +27,8 @@ Items:
         IsEnabled: true
         MaxPitch: 1.49225652
         MouseSensibility: 0.0299999993
-        Speed: 5.0
+        MoveSpeed: 5.0
+        RotationSpeed: 5.0
         TouchMoveAndOrientationRatio: 0.5
         TouchSensibility: 1.0
         UpdateOrder: 0.5
@@ -149,10 +112,10 @@ Items:
       - !Evergine.Framework.Graphics.PhotometricDirectionalLight,Evergine.Framework
         Id: 61710874-add6-4a6a-a958-400706cbfa59
         Color:
-          A: 0
-          B: 209
-          G: 229
-          R: 244
+          A: 255
+          B: 253
+          G: 248
+          R: 255
         ColorByTemperature: true
         DebugMode: false
         GammaDistribution: 0.800000012
@@ -161,10 +124,10 @@ Items:
         IsEnabled: true
         IsShadowEnabled: true
         LinearColor:
-          A: 0.0
-          B: 0.642304778
-          G: 0.78936857
-          R: 0.904716849
+          A: 1.0
+          B: 0.982790232
+          G: 0.943362474
+          R: 1.0
         ShadowBias: 0.00499999989
         ShadowDistance: 80.0
         ShadowOpacity: 1.0
@@ -205,14 +168,15 @@ Items:
         Id: 333cefec-da47-454c-bd8c-1b1c37d4e7dc
         AsignedTo: Default
         IsEnabled: true
-        Material: 27ab2d4e-e5cb-460d-a657-8e93a4a79b63
+        Material: null
+        UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 25c20a6d-4118-4aa5-9614-347f33d2463a
         Diameter: 1.0
         IsEnabled: true
         Tessellation: 32
-        UVHorizontalFlip: false
-        UVVerticalFlip: false
+        UMirror: false
+        VMirror: false
       - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
         Id: d133b378-aec3-40ed-978f-3aad0c014d3b
         DebugBoundingbox: true
@@ -267,6 +231,7 @@ Items:
         AsignedTo: Default
         IsEnabled: true
         Material: a25e149d-55ef-45bd-811e-b9775f12f88e
+        UseCopy: false
       - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
         Id: b1995f4d-1da7-4525-b821-5db9f452ec05
         DebugBoundingbox: true
@@ -293,4 +258,18 @@ Items:
         UpdateOrder: 0.5
     Children: []
     Id: 33590898-6eb4-487c-be9f-1752b5d9d12a
-Managers: []
+Managers:
+  - !Evergine.Framework.Managers.EnvironmentManager,Evergine.Framework
+    Id: 6e5cdbb3-360c-45a6-bd51-e54d464ac96c
+    IBLReflectionProbe: dd15ff21-58cd-4300-8efe-62bc1ada12cd
+    IntensityMultiplier: 1.0
+    IsEnabled: true
+    Strategy: Automatically
+  - !Evergine.Framework.Managers.ShadowMapManager,Evergine.Framework
+    Id: 246579ec-1937-40ab-b8a7-893c0b90762d
+    AutoDepthBounds: false
+    DirectionalResolution: Size_2048
+    IsEnabled: true
+    PunctualResolution: Size_512
+    ShadowFilter: PCF7x7
+    SpotResolution: Size_512

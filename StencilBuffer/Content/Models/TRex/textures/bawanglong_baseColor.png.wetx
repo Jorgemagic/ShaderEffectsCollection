@@ -1,28 +1,28 @@
 !Evergine.Assets.Exporters.TextureMetaFile,Evergine.Assets
-Id: 73d3a7fe-5a35-433d-84ba-51828c560868
+Id: ebf6f6b9-150c-4557-b63d-56485600e54a
 DefaultProfile:
   ExcludeAsset: false
   ExportedItem: null
   Name: default
   PixelFormat: R8G8B8A8_UNorm
   Platform: Undefined
-  ScaledHeight: 1024
+  ScaledHeight: 2048
   ScaledPercentage: 1.0
-  ScaledWidth: 1024
-  ScalingType: Freeform
+  ScaledWidth: 2048
+  ScalingType: Original
 ExportAsRaw: false
 GenerateMipMaps: true
 NinePatchType: None
 PremultipliedAlpha: true
 Profiles: {}
-SamplerID: 9d4adf42-8bff-41d9-b1bd-208186ec690f
+SamplerID: 00000000-0000-0000-0000-000000000000
 Source:
   Header:
-    Id: bb24802a-7065-4c27-8e9f-196d3b1e0436
+    Id: 30bb1e43-bf3e-40a3-b979-b51061bb3749
     IsCompressed: true
   LastModified: 0001-01-01T00:00:00.0000000
   TextureInfo:
-    Id: 15975165-9b13-4b9c-8a9c-5ae9fa5e87b7
+    Id: 0f84271e-bdc9-431e-aeb1-99ea7de06633
     Description:
       ArraySize: 1
       CpuAccess: None

@@ -60,6 +60,7 @@ namespace HeightMap.Windows
                 RefreshRate = 60
             };
             var swapChain = graphicsContext.CreateSwapChain(swapChainDescription);
+            //swapChain.FrameBuffer.IntermediateBufferAssociated = false;            
             swapChain.VerticalSync = true;
 
             var graphicsPresenter = application.Container.Resolve<GraphicsPresenter>();

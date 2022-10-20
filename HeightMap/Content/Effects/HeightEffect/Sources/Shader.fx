@@ -2155,10 +2155,6 @@
 		float4 color = EvaluateMaterial(shading, material, input.DepthVS);
 		color.rgb *= Alpha;
 	
-	#if GAMMA_COLORSPACE
-		color = LinearToGamma(color);
-	#endif
-	
 		return color;
 	}
 	

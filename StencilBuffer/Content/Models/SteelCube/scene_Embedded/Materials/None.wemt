@@ -1,12 +1,12 @@
 !Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
-Id: 0d572395-3667-42a4-89dc-9d6dce34c685
+Id: 5f2561ef-bcc2-486e-8dd9-b487a9638b18
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 08f0d226-35f8-41f6-abaa-ac417032b369
+  Id: 402c7d87-38d6-4451-a813-e263ccffc425
   ActiveDirectives:
     - LIT
     - IBL
@@ -37,14 +37,22 @@ MaterialInfo:
     - Name: ReferenceAlpha
       Type: System.Single
       ValueByteArray: AAAAAA==
-  Samplers: []
+  Samplers:
+    - ID: 45d6cca9-0f97-4b9a-bb2c-71a0de52d945
+      Name: BaseColorSampler
+    - ID: 45d6cca9-0f97-4b9a-bb2c-71a0de52d945
+      Name: NormalSampler
+    - ID: 45d6cca9-0f97-4b9a-bb2c-71a0de52d945
+      Name: MetallicRoughnessSampler
+    - ID: 45d6cca9-0f97-4b9a-bb2c-71a0de52d945
+      Name: OcclusionSampler
   Textures:
-    - ID: 2a077e14-ca3d-4b32-9b16-7a6e51f31440
+    - ID: 27f8102e-f3f4-4210-9b8d-7c1f4a2d17d6
       Name: BaseColorTexture
-    - ID: 7fe5dc60-e9f8-4f34-a393-74785962930e
+    - ID: c40ebafb-38a7-4f7d-987f-25a019c371a6
       Name: NormalTexture
-    - ID: 30b775da-fe69-48b2-8151-87b653da7177
+    - ID: a7e6d5d9-06c9-4cd6-be5f-14ce8fbb0a68
       Name: MetallicRoughnessTexture
-    - ID: 30b775da-fe69-48b2-8151-87b653da7177
+    - ID: a7e6d5d9-06c9-4cd6-be5f-14ce8fbb0a68
       Name: OcclusionTexture
 Profiles: {}

@@ -1,5 +1,5 @@
 !Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
-Id: 2eb6a82e-b01f-46d5-9425-22510a0c170a
+Id: 223776b2-09b0-4b02-9570-dd512d9d6ef3
 Clips:
   - AdditiveReferenceFrame: 0
     AdditiveReferenceSourceTrack: null
@@ -22,11 +22,11 @@ GenerateTangentSpace: true
 Profiles: {}
 Source:
   Header:
-    Id: 47071b32-feb5-4c02-915c-98179affacc8
+    Id: 5a117011-b41c-47cd-b66a-3e9ade30a45b
     IsCompressed: true
   LastModified: 0001-01-01T00:00:00.0000000
   ModelInfo:
-    Id: e08c4cab-23a3-49b4-936b-4d0f02746762
+    Id: a6ea30b8-b444-441a-85d8-8a24f87f99de
     AnimationTracks:
       - AdditiveReferenceFrame: 0
         AdditiveReferenceSourceTrack: null
@@ -42,7 +42,7 @@ Source:
     EmbeddedResources: null
     Materials:
       - Item1: bawanglong
-        Item2: ba0ffa67-08ea-4242-8610-eac3964ae64d
+        Item2: f53559a4-a945-4266-919d-76a2f484037f
     Nodes:
       - RootNode (gltf orientation matrix)
       - RootNode (gltf orientation matrix).RootNode (model correction matrix)

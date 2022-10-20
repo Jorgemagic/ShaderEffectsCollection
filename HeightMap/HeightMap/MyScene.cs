@@ -14,7 +14,12 @@ namespace HeightMap
         }
 
         protected override void CreateScene()
-        {            
+        {
+            var entity = new Entity()
+                .AddComponent(new TextureSnapshot());
+
+            this.Managers.EntityManager.Add(entity);
+
         }
     }
 }

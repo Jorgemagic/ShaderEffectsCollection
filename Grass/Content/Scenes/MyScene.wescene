@@ -1,44 +1,6 @@
 !Evergine.Framework.Assets.AssetSources.Entities.SceneModel,Evergine.Framework
 Items:
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-    Name: SceneManagers
-    Tag: null
-    IsEnabled: true
-    IsStatic: false
-    Components:
-      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-        Id: 7cf652b5-0d2e-4a05-ac0b-02015791fb99
-        IsEnabled: true
-        LocalOrientation:
-          W: 1.0
-          X: 0.0
-          Y: 0.0
-          Z: 0.0
-        LocalPosition:
-          X: 0.999729156
-          Y: 1.580235
-          Z: 0.843612909
-        LocalScale:
-          X: 1.0
-          Y: 1.0
-          Z: 1.0
-      - !Evergine.Components.Graphics3D.EnvironmentComponent,Evergine.Framework
-        Id: 94fb114a-c4d8-4674-bd4d-409893d8ab53
-        IntensityMultiplier: 1.0
-        IsEnabled: true
-        ReflectionProbe: cb4c9738-03a0-494f-a839-20a22581fb59
-        Strategy: Automatically
-      - !Evergine.Components.Graphics3D.ShadowMapComponent,Evergine.Framework
-        Id: 4dc7a18d-bde5-4e59-8c0c-67b68a42207e
-        AutoDepthBounds: false
-        DirectionalResolution: Size_1024
-        IsEnabled: true
-        PunctualResolution: Size_512
-        ShadowFilter: PCF7x7
-        SpotResolution: Size_512
-    Children: []
-    Id: 3aea6832-ccae-4bc6-9bb7-64229c7c2de0
-  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: Camera
     Tag: null
     IsEnabled: true
@@ -65,7 +27,8 @@ Items:
         IsEnabled: true
         MaxPitch: 1.49225616
         MouseSensibility: 0.0299999993
-        Speed: 5.0
+        MoveSpeed: 5.0
+        RotationSpeed: 5.0
         TouchMoveAndOrientationRatio: 0.5
         TouchSensibility: 1.0
         UpdateOrder: 0.5
@@ -149,10 +112,10 @@ Items:
       - !Evergine.Framework.Graphics.PhotometricDirectionalLight,Evergine.Framework
         Id: 5f6768ca-a7e6-4ab7-82b2-d9b3c42d111f
         Color:
-          A: 0
-          B: 225
-          G: 238
-          R: 248
+          A: 255
+          B: 253
+          G: 248
+          R: 255
         ColorByTemperature: true
         DebugMode: false
         GammaDistribution: 0.800000012
@@ -161,10 +124,10 @@ Items:
         IsEnabled: true
         IsShadowEnabled: true
         LinearColor:
-          A: 0.0
-          B: 0.758807242
-          G: 0.862642348
-          R: 0.939133644
+          A: 1.0
+          B: 0.982790232
+          G: 0.943362474
+          R: 1.0
         ShadowBias: 0.00499999989
         ShadowDistance: 80.0
         ShadowOpacity: 1.0
@@ -205,14 +168,15 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: d688f117-b44b-4246-8b5a-6ac3f1b5e634
+        Material: null
+        UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
         Diameter: 1.0
         IsEnabled: true
         Tessellation: 32
-        UVHorizontalFlip: false
-        UVVerticalFlip: false
+        UMirror: false
+        VMirror: false
       - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
         Id: 1665742b-454f-4cda-9b9b-df6698342e5d
         DebugBoundingbox: true
@@ -267,6 +231,7 @@ Items:
         AsignedTo: Default
         IsEnabled: true
         Material: 2132a844-8a52-4725-bbc2-c5782b07e529
+        UseCopy: false
       - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
         Id: bf448268-4418-4e34-a5ed-167baabe2533
         DebugBoundingbox: true
@@ -312,19 +277,23 @@ Items:
         AsignedTo: Default
         IsEnabled: true
         Material: 6156ce38-b678-49bd-ae85-ba773a0a1535
+        UseCopy: false
       - !Evergine.Components.Graphics3D.PlaneMesh,Evergine.Components
         Id: 6abd4922-c515-4bfc-9210-132d0504cfeb
         Height: 1.0
-        InitialU: 0.0
-        InitialV: 0.0
         IsEnabled: true
+        Origin:
+          X: 0.5
+          Y: 0.5
         PlaneNormal: YPositive
         TwoSides: false
+        UMirror: false
+        UOffset: 0.0
         UTile: 1.0
-        UVHorizontalFlip: false
-        UVVerticalFlip: false
+        VMirror: false
+        VOffset: 0.0
+        VTile: 1.0
         Width: 1.0
-        YTile: 1.0
       - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
         Id: 1c4a4364-dfa4-4766-bb39-930c8580932a
         DebugBoundingbox: true
@@ -476,6 +445,7 @@ Items:
                             AsignedTo: Wood_zabor
                             IsEnabled: true
                             Material: 07669a46-5ee1-4f4c-88f4-60b0a4e928d5
+                            UseCopy: false
                           - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                             Id: e7cd53b4-19c6-4ea2-a3fa-73eb04973749
                             IsEnabled: true
@@ -564,6 +534,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: 3e2ecfc1-b650-4d5d-a3b1-e0e840691165
                                 IsEnabled: true
@@ -653,6 +624,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: 59b751bb-1936-4e62-af41-4a33a78c24c0
                                 IsEnabled: true
@@ -742,6 +714,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: cfbdfefd-a5c2-44ae-add0-4480423157fa
                                 IsEnabled: true
@@ -831,6 +804,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: e16fcaef-48a6-468e-ab0a-babd0a9c3c41
                                 IsEnabled: true
@@ -920,6 +894,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: bb5e967f-d2ae-434f-945f-69cdf21efc47
                                 IsEnabled: true
@@ -1009,6 +984,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: c8960cff-dc23-425c-b965-d8e167ffd36d
                                 IsEnabled: true
@@ -1098,6 +1074,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: 6e6eb241-51bb-4028-a307-7bbc6b48c3fe
                                 IsEnabled: true
@@ -1187,6 +1164,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: 588b58ab-0252-480f-9d90-3ab52e9a3191
                                 IsEnabled: true
@@ -1276,6 +1254,7 @@ Items:
                                 AsignedTo: Default
                                 IsEnabled: true
                                 Material: 1f401f28-31de-4926-b355-ea3934652d56
+                                UseCopy: false
                               - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                                 Id: fd10a591-3c83-41e7-81f6-5f6dd544c22e
                                 IsEnabled: true
@@ -1342,6 +1321,7 @@ Items:
                             AsignedTo: Column
                             IsEnabled: true
                             Material: c5a80c53-2479-4152-909e-2b6a7c1196b2
+                            UseCopy: false
                           - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                             Id: e089f75e-54d5-481a-9744-90b1b5218eb6
                             IsEnabled: true
@@ -1503,6 +1483,7 @@ Items:
                             AsignedTo: BicycleBase.001
                             IsEnabled: true
                             Material: e75ceb44-5383-48dc-9143-9a3bfd275828
+                            UseCopy: false
                           - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                             Id: c99259f1-f049-4ddf-900f-a0d2ef913473
                             IsEnabled: true
@@ -1544,6 +1525,7 @@ Items:
                             AsignedTo: Chain.001
                             IsEnabled: true
                             Material: b68d7e96-37ea-41f1-b4ed-8d1a7ce54bf1
+                            UseCopy: false
                           - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                             Id: a76c38e1-aa53-490d-9985-828c4d122a86
                             IsEnabled: true
@@ -1682,6 +1664,7 @@ Items:
                         AsignedTo: Material0
                         IsEnabled: true
                         Material: 2198c804-4d8b-4fde-9703-0e522f9df639
+                        UseCopy: false
                       - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                         Id: fb030bcf-6efa-449f-a614-f36b40bfbbfe
                         IsEnabled: true
@@ -1723,6 +1706,7 @@ Items:
                         AsignedTo: Material0
                         IsEnabled: true
                         Material: 2198c804-4d8b-4fde-9703-0e522f9df639
+                        UseCopy: false
                       - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                         Id: 346d18fb-4098-4a26-a7c9-7a96d38ae3d0
                         IsEnabled: true
@@ -1764,6 +1748,7 @@ Items:
                         AsignedTo: Material0
                         IsEnabled: true
                         Material: 2198c804-4d8b-4fde-9703-0e522f9df639
+                        UseCopy: false
                       - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                         Id: c1535c87-0b71-4dbe-a9af-dd98192db485
                         IsEnabled: true
@@ -1805,6 +1790,7 @@ Items:
                         AsignedTo: Material0
                         IsEnabled: true
                         Material: 2198c804-4d8b-4fde-9703-0e522f9df639
+                        UseCopy: false
                       - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                         Id: 49d3676d-0701-4d01-a41d-9db47e052bde
                         IsEnabled: true
@@ -1846,6 +1832,7 @@ Items:
                         AsignedTo: Material0
                         IsEnabled: true
                         Material: 2198c804-4d8b-4fde-9703-0e522f9df639
+                        UseCopy: false
                       - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                         Id: 2aee4211-ce31-453d-8624-582af09bce31
                         IsEnabled: true
@@ -1887,6 +1874,7 @@ Items:
                         AsignedTo: Material0
                         IsEnabled: true
                         Material: 2198c804-4d8b-4fde-9703-0e522f9df639
+                        UseCopy: false
                       - !Evergine.Components.Graphics3D.MeshComponent,Evergine.Framework
                         Id: 67cc9309-b6f5-439e-8dda-cb8fc65c7b8c
                         IsEnabled: true
@@ -1956,4 +1944,18 @@ Items:
           Z: 1.0
     Children: []
     Id: 68b13dad-8c81-4888-b78b-14294f84e267
-Managers: []
+Managers:
+  - !Evergine.Framework.Managers.EnvironmentManager,Evergine.Framework
+    Id: a8c65f75-6132-4a14-a42f-31f119529fa5
+    IBLReflectionProbe: cb4c9738-03a0-494f-a839-20a22581fb59
+    IntensityMultiplier: 1.0
+    IsEnabled: true
+    Strategy: Automatically
+  - !Evergine.Framework.Managers.ShadowMapManager,Evergine.Framework
+    Id: 57ccd2a1-f955-4cdd-8c50-f2e9a866e1ca
+    AutoDepthBounds: false
+    DirectionalResolution: Size_1024
+    IsEnabled: true
+    PunctualResolution: Size_512
+    ShadowFilter: PCF7x7
+    SpotResolution: Size_512

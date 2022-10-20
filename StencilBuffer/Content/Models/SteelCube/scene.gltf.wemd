@@ -1,5 +1,5 @@
 !Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
-Id: 65b0c5e4-d119-4c82-a07f-dbfa5bb2e251
+Id: d12d330c-5de6-4023-b05e-fa0b01708fda
 Clips: []
 DefaultProfile:
   ExcludeAsset: false
@@ -11,16 +11,16 @@ GenerateTangentSpace: true
 Profiles: {}
 Source:
   Header:
-    Id: 6f775ba8-b5e5-4d26-80fc-e0116bd672d1
+    Id: 80985c25-4e4e-4e8a-863c-3a12978dc160
     IsCompressed: true
   LastModified: 0001-01-01T00:00:00.0000000
   ModelInfo:
-    Id: 2cc8ad9f-808e-4028-87d9-ff18dd6766a4
+    Id: 0ce3a9af-f70c-464f-92ee-ef71dca48a71
     AnimationTracks: []
     EmbeddedResources: null
     Materials:
       - Item1: None
-        Item2: 0d572395-3667-42a4-89dc-9d6dce34c685
+        Item2: 5f2561ef-bcc2-486e-8dd9-b487a9638b18
     Nodes:
       - RootNode (gltf orientation matrix)
       - RootNode (gltf orientation matrix).RootNode (model correction matrix)
