@@ -1,0 +1,26 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: dd1e8363-48fb-4a77-9fc7-d18f724333c4
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: 9f46c05f-4c9c-4f0e-a6a1-036cd6364e19
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 2704efae-c067-4996-b705-983b9fd23c8f
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: Material.003
+        Item2: fa765f78-dc30-4225-8e78-7bd0ca517d73
+    Nodes:
+      - Icosphere
+SwapWindingOrder: false

@@ -58,3 +58,18 @@ Using a geometry shader I created a blade of grass per each mesh vertex. The bla
 <img src="https://roystan.net/media/tutorials/grass/grass-construction.gif" alt="Blade mesh" width="300"/>
 
 This demo is based on this great [post](https://roystan.net/articles/grass-shader.html) by Roystan.
+
+## [Fireball shader](Fireball/)
+[![Fireball shader Video](Images/ExplosionVideo.png)](https://youtu.be/GTiWvuKpxJM)
+
+For this demo I used Blender to create an ICO sphere with a high tesselation, this geometry allows showing the deformation better than a common UV sphere based on quads.
+
+<img src="Images/ICOSphere.png" alt="ICO sphere vs UV sphere" width="500"/>
+
+Using [Classic Perlin 3D Noise by Stefan Gustavson](https://weber.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf) is possible to deform the vertices of the sphere following the generated noise. The vertex position will be:
+
+_vertexPosition + vertexNormal * GeneratedNoise_
+
+Animating the noise and coloring the sphere with a gradient texture is possible to get amazing effects.
+
+This demo is based on this [GLSL explosion effect](https://www.clicktorelease.com/code/perlin/explosion.html)

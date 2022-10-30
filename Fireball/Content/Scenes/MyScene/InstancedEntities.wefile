@@ -1,0 +1,12 @@
+!Evergine.Assets.Exporters.FileMetaFile,Evergine.Assets
+Id: 2c99255f-56c3-43c0-8204-42d0e4e2f96e
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+Profiles: {}
+Source:
+  Header:
+    Id: 6e04dc4a-c538-4c70-99c3-e4782694c83d
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000

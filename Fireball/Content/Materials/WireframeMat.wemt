@@ -1,0 +1,31 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: 0e0ac5cb-fed3-4a78-accf-2079ab945433
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: f0a71c71-f2f1-4154-9b69-364ab99f1285
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: 566c3432-9815-44b8-b463-e8ee4484d5cc
+  Layer: 95831990-feda-4152-89a6-e12cc64b274f
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: Time
+      Type: System.Single
+      ValueByteArray: AAAAAA==
+    - Name: Weight
+      Type: System.Single
+      ValueByteArray: MzMzPw==
+  Samplers:
+    - ID: 7d1e2792-2031-42bb-a67c-0dbd282be12a
+      Name: Sampler
+  Textures:
+    - ID: d320cfee-c8ba-4267-9a36-84800d73cb6e
+      Name: tExplosion
+Profiles: {}
