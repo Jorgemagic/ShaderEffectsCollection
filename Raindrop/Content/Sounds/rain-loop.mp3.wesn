@@ -1,0 +1,22 @@
+!Evergine.Assets.Exporters.SoundMetaFile,Evergine.Assets
+Id: 9ec011b5-1302-46e8-b19f-be7744300f6d
+DefaultProfile:
+  ChannelFormat: Mono
+  Encoding: PCM8
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+  SampleRateMode: Low
+ExportAsRaw: false
+Profiles: {}
+Source:
+  Header:
+    Id: 65411697-9daa-4a8b-bd4b-d3310f5236fd
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  SoundInfo:
+    Id: c8b2e876-012f-4f7c-9414-aadc3031334b
+    Format:
+      Channels: 2
+      Encoding: PCM16
+      SampleRate: 44100
