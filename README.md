@@ -73,3 +73,26 @@ _vertexPosition + vertexNormal * GeneratedNoise_
 Animating the noise and coloring the sphere with a gradient texture is possible to get amazing effects.
 
 This demo is based on this [GLSL explosion effect](https://www.clicktorelease.com/code/perlin/explosion.html)
+
+## [Raindrop shader](Raindrop/)
+[![Raindrop shader Video](Images/RainDropVideo.png)](https://youtu.be/37WrMrPxJE0)
+
+In this demo, the raindrop effect is added such as an additional animated normal texture. To create the ripples effects I used the following normal texture:
+
+<img src="Images/RainSpriteSheet.png" alt="Rain Sprite Sheet" width="300"/>
+
+This texture is added over the normal texture of the material. The texture is an animated spritesheet that contains 16 frames. The following code gets the current tile frame:
+
+```cpp
+// TilesWidth = 4
+// TilesHeight = 4
+float tile = fmod(floor(Time * Speed), TilesWidth * TilesHeight);
+float2 tileCount = float2(1.0.xx) / float2(TilesWidth, TilesHeight);
+float tileY = floor(tile / 4);
+float tileX = fmod(tile, TilesWidth);
+float2 coords = (input.TexCoords + float2(tileX, tileY)) * tileCount;
+
+```
+
+Finally, I added a multiplier rain texture. This texture allows for simulating where there are pools of water on the road and where not.
+
