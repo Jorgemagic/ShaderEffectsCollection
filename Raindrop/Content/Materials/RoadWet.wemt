@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 1f0cceb1-1803-4f6c-af2f-3260b8653e53
+  Id: e6058c2f-698a-4ce9-8482-dd50236fe455
   ActiveDirectives:
     - DIFF
     - IBL
@@ -107,7 +107,7 @@ MaterialInfo:
       ValueByteArray: mpmZPpqZmT4=
     - Name: RainTile
       Type: Evergine.Mathematics.Vector2,Evergine.Mathematics
-      ValueByteArray: AACgQAAAoEA=
+      ValueByteArray: AADAQAAAwEA=
     - Name: TimeOffset
       Type: System.Single
       ValueByteArray: zczMPQ==
