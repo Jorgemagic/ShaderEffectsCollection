@@ -10,14 +10,14 @@ Items:
         Id: 809f1d2c-2305-4916-acfe-f81399ffb235
         IsEnabled: true
         LocalOrientation:
-          W: 0.874840796
-          X: -0.227078363
-          Y: 0.414164305
-          Z: 0.107503295
+          W: 0.912869573
+          X: -0.212743998
+          Y: 0.339344293
+          Z: 0.0790856257
         LocalPosition:
-          X: 1.04293656
-          Y: 0.418180734
-          Z: 0.584000289
+          X: 0.87802279
+          Y: 0.259584099
+          Z: 0.747472942
         LocalScale:
           X: 1.0
           Y: 1.0
@@ -27,7 +27,7 @@ Items:
         IsEnabled: true
         MaxPitch: 1.49225616
         MouseSensibility: 0.0299999993
-        MoveSpeed: 0.300000012
+        MoveSpeed: 0.150000006
         RotationSpeed: 5.0
         TouchMoveAndOrientationRatio: 0.5
         TouchSensibility: 1.0
@@ -35,7 +35,7 @@ Items:
       - !Evergine.Framework.Graphics.Camera3D,Evergine.Framework
         Id: 5b10653e-93d2-48e7-884f-a07b2ac173ee
         Aperture: 1.0
-        AspectRatio: 1.7352941
+        AspectRatio: 1.72909701
         AutoDepthBounds: false
         AutoExposureEnabled: false
         CameraOrder: 0.0
@@ -67,10 +67,10 @@ Items:
         MinLogLuminance: -10.0
         NearPlane: 0.100000001
         ScreenViewport:
-          Height: 272.0
+          Height: 897.0
           MaxDepth: 1.0
           MinDepth: 0.0
-          Width: 472.0
+          Width: 1551.0
           X: 0.0
           Y: 0.0
         Sensitivity: 100.0
@@ -90,7 +90,50 @@ Items:
         DopplerFactor: 1.0
         IsEnabled: true
         UpdateOrder: 0.5
-    Children: []
+    Children:
+      - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+        Name: pointLight
+        Tag: null
+        IsEnabled: true
+        IsStatic: false
+        Components:
+          - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+            Id: 86f36783-50dd-45eb-928c-fec12a9cc4e2
+            IsEnabled: true
+            LocalOrientation:
+              W: 0.874840796
+              X: 0.227078363
+              Y: -0.414164305
+              Z: -0.107503295
+            LocalPosition:
+              X: 0.0
+              Y: 0.0
+              Z: 0.0
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+          - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
+            Id: 3879de9d-9b68-4e73-9d19-8ab656fe31ac
+            Color:
+              A: 255
+              B: 41
+              G: 162
+              R: 209
+            DebugMode: false
+            Intensity: 1.0
+            IsEnabled: true
+            IsShadowEnabled: false
+            LightRange: 1.0
+            LinearColor:
+              A: 1.0
+              B: 0.0179364327
+              G: 0.368590951
+              R: 0.645555258
+            ShadowBias: 0.00400000019
+            ShadowOpacity: 1.0
+        Children: []
+        Id: 7955ee2e-c7f8-4938-8d96-fc8d998bef3d
     Id: 9841b6b3-9c09-4b60-b442-a5c63257ee02
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: SunLight
@@ -173,7 +216,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 1f4ee0d6-92d7-48ed-9c8e-3bb4fb28ed09
+        Material: 3e88b8d6-d0fd-4331-b5f0-85df96e7440c
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
@@ -2551,13 +2594,13 @@ Items:
         Id: 69c272a8-36fb-41ad-98be-3db06a7423c3
     Id: c998dba5-a2c0-4c1e-8122-3f95820f8f23
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-    Name: pointLight
+    Name: Lights
     Tag: null
     IsEnabled: true
     IsStatic: false
     Components:
       - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-        Id: de81b6fe-c68c-414e-8252-1643e60d0f5c
+        Id: 65a10f69-87ff-4600-a55f-bdd775050174
         IsEnabled: true
         LocalOrientation:
           W: 1.0
@@ -2566,41 +2609,108 @@ Items:
           Z: 0.0
         LocalPosition:
           X: 0.0
-          Y: 0.266550392
-          Z: -0.551861763
+          Y: 0.0
+          Z: 0.0
         LocalScale:
           X: 1.0
           Y: 1.0
           Z: 1.0
-      - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
-        Id: d29d0713-ceb6-48d3-a537-9de1f8f978a3
-        Color:
-          A: 255
-          B: 41
-          G: 162
-          R: 209
-        DebugMode: false
-        Intensity: 1.0
+    Children:
+      - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+        Name: pointLight
+        Tag: null
         IsEnabled: true
-        IsShadowEnabled: false
-        LightRange: 20.0
-        LinearColor:
-          A: 1.0
-          B: 0.0179364327
-          G: 0.368590951
-          R: 0.645555258
-        ShadowBias: 0.00400000019
-        ShadowOpacity: 1.0
-    Children: []
-    Id: ca523f82-7775-4ab9-8649-e58499bef03e
+        IsStatic: false
+        Components:
+          - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+            Id: de81b6fe-c68c-414e-8252-1643e60d0f5c
+            IsEnabled: true
+            LocalOrientation:
+              W: 1.0
+              X: 0.0
+              Y: 0.0
+              Z: 0.0
+            LocalPosition:
+              X: 0.0
+              Y: 0.266550392
+              Z: -0.551861763
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+          - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
+            Id: d29d0713-ceb6-48d3-a537-9de1f8f978a3
+            Color:
+              A: 255
+              B: 41
+              G: 162
+              R: 209
+            DebugMode: false
+            Intensity: 1.0
+            IsEnabled: true
+            IsShadowEnabled: false
+            LightRange: 1.0
+            LinearColor:
+              A: 1.0
+              B: 0.0179364327
+              G: 0.368590951
+              R: 0.645555258
+            ShadowBias: 0.00400000019
+            ShadowOpacity: 1.0
+        Children: []
+        Id: ca523f82-7775-4ab9-8649-e58499bef03e
+      - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+        Name: pointLight
+        Tag: null
+        IsEnabled: true
+        IsStatic: false
+        Components:
+          - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+            Id: f8ecb701-6db7-429b-b301-111b5d296de5
+            IsEnabled: true
+            LocalOrientation:
+              W: 1.0
+              X: 0.0
+              Y: 0.0
+              Z: 0.0
+            LocalPosition:
+              X: -0.113775313
+              Y: 0.266550392
+              Z: 0.38654086
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+          - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
+            Id: 233636b2-00d6-48f1-8a3b-37be0d975d2c
+            Color:
+              A: 255
+              B: 255
+              G: 39
+              R: 0
+            DebugMode: false
+            Intensity: 1.0
+            IsEnabled: true
+            IsShadowEnabled: false
+            LightRange: 1.0
+            LinearColor:
+              A: 1.0
+              B: 1.0
+              G: 0.0160677005
+              R: 0.0
+            ShadowBias: 0.00400000019
+            ShadowOpacity: 1.0
+        Children: []
+        Id: 097e115c-e247-41c9-aae8-921ead194961
+    Id: 4844cc1e-01e6-4369-be8f-41b5ab658abb
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-    Name: pointLight
+    Name: Lights
     Tag: null
     IsEnabled: true
     IsStatic: false
     Components:
       - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-        Id: ff3f9ef3-bcad-4ae8-b9a7-2f0ab3a3047a
+        Id: 496b3b79-7e7c-4358-8676-a17d2b93d62a
         IsEnabled: true
         LocalOrientation:
           W: 1.0
@@ -2608,34 +2718,211 @@ Items:
           Y: 0.0
           Z: 0.0
         LocalPosition:
-          X: -1.03211451
-          Y: 0.266550392
-          Z: 0.38654089
+          X: -0.977445662
+          Y: 0.0
+          Z: -1.16520766E-07
         LocalScale:
           X: 1.0
           Y: 1.0
           Z: 1.0
-      - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
-        Id: 45e9979c-f2c9-48f4-bc90-416a049bb36e
-        Color:
-          A: 255
-          B: 255
-          G: 39
-          R: 0
-        DebugMode: false
-        Intensity: 1.0
+    Children:
+      - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+        Name: pointLight
+        Tag: null
         IsEnabled: true
-        IsShadowEnabled: false
-        LightRange: 20.0
-        LinearColor:
-          A: 1.0
-          B: 1.0
-          G: 0.0160677005
-          R: 0.0
-        ShadowBias: 0.00400000019
-        ShadowOpacity: 1.0
-    Children: []
-    Id: 1a630279-88ac-4b28-b673-60f069765637
+        IsStatic: false
+        Components:
+          - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+            Id: 952db83a-85fa-444a-840f-b4ee8a9d83f0
+            IsEnabled: true
+            LocalOrientation:
+              W: 1.0
+              X: 0.0
+              Y: 0.0
+              Z: 0.0
+            LocalPosition:
+              X: 0.0
+              Y: 0.266550392
+              Z: -0.551861763
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+          - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
+            Id: a8973902-a513-4768-a536-9a57e62ef703
+            Color:
+              A: 255
+              B: 41
+              G: 162
+              R: 209
+            DebugMode: false
+            Intensity: 1.0
+            IsEnabled: true
+            IsShadowEnabled: false
+            LightRange: 1.0
+            LinearColor:
+              A: 1.0
+              B: 0.0179364327
+              G: 0.368590951
+              R: 0.645555258
+            ShadowBias: 0.00400000019
+            ShadowOpacity: 1.0
+        Children: []
+        Id: 7fccef49-f558-441b-84a9-4cd7cfb11c37
+      - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+        Name: pointLight
+        Tag: null
+        IsEnabled: true
+        IsStatic: false
+        Components:
+          - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+            Id: 2564f236-7dea-4837-8468-ec9d853cbb13
+            IsEnabled: true
+            LocalOrientation:
+              W: 1.0
+              X: 0.0
+              Y: 0.0
+              Z: 0.0
+            LocalPosition:
+              X: -0.113775313
+              Y: 0.266550392
+              Z: 0.38654086
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+          - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
+            Id: 8eb06451-669d-4938-8c5a-ffdd0a33cda6
+            Color:
+              A: 255
+              B: 255
+              G: 39
+              R: 0
+            DebugMode: false
+            Intensity: 1.0
+            IsEnabled: true
+            IsShadowEnabled: false
+            LightRange: 1.0
+            LinearColor:
+              A: 1.0
+              B: 1.0
+              G: 0.0160677005
+              R: 0.0
+            ShadowBias: 0.00400000019
+            ShadowOpacity: 1.0
+        Children: []
+        Id: 456a120f-bf42-4cf4-81e5-4a3eece6f770
+    Id: 89b9fe0b-aee7-4103-acfe-ba73dcf28134
+  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+    Name: Lights
+    Tag: null
+    IsEnabled: true
+    IsStatic: false
+    Components:
+      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+        Id: d225d3b1-c65f-486b-ab86-3c6144927f7f
+        IsEnabled: true
+        LocalOrientation:
+          W: 1.0
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        LocalPosition:
+          X: 0.988182366
+          Y: 0.0
+          Z: 1.17800369E-07
+        LocalScale:
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    Children:
+      - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+        Name: pointLight
+        Tag: null
+        IsEnabled: true
+        IsStatic: false
+        Components:
+          - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+            Id: e7e6a1b6-46e9-4a0e-90b3-f1403d1710fa
+            IsEnabled: true
+            LocalOrientation:
+              W: 1.0
+              X: 0.0
+              Y: 0.0
+              Z: 0.0
+            LocalPosition:
+              X: 0.0
+              Y: 0.266550392
+              Z: -0.551861763
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+          - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
+            Id: 7219eae0-87b4-467f-bf4c-c35c90044ef6
+            Color:
+              A: 255
+              B: 41
+              G: 162
+              R: 209
+            DebugMode: false
+            Intensity: 1.0
+            IsEnabled: true
+            IsShadowEnabled: false
+            LightRange: 1.0
+            LinearColor:
+              A: 1.0
+              B: 0.0179364327
+              G: 0.368590951
+              R: 0.645555258
+            ShadowBias: 0.00400000019
+            ShadowOpacity: 1.0
+        Children: []
+        Id: c18d1fe9-2a35-4885-a5c4-c292b5a36df8
+      - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+        Name: pointLight
+        Tag: null
+        IsEnabled: true
+        IsStatic: false
+        Components:
+          - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+            Id: 82ccc21e-0931-4d1e-ac73-90bbedbe940a
+            IsEnabled: true
+            LocalOrientation:
+              W: 1.0
+              X: 0.0
+              Y: 0.0
+              Z: 0.0
+            LocalPosition:
+              X: -0.113775313
+              Y: 0.266550392
+              Z: 0.38654086
+            LocalScale:
+              X: 1.0
+              Y: 1.0
+              Z: 1.0
+          - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
+            Id: 656b8ff7-df0f-40ee-8028-61b77a0886c0
+            Color:
+              A: 255
+              B: 255
+              G: 39
+              R: 0
+            DebugMode: false
+            Intensity: 1.0
+            IsEnabled: true
+            IsShadowEnabled: false
+            LightRange: 1.0
+            LinearColor:
+              A: 1.0
+              B: 1.0
+              G: 0.0160677005
+              R: 0.0
+            ShadowBias: 0.00400000019
+            ShadowOpacity: 1.0
+        Children: []
+        Id: 8e0f48d9-2c1a-4a97-9b6f-92abdd539438
+    Id: 40de4abc-841f-4b1a-afef-3cd9b693667e
 Managers:
   - !Evergine.Framework.Managers.AssetSceneManager,Evergine.Framework
     Id: 4ae9964a-5a8a-463f-b714-050389b3b68c
