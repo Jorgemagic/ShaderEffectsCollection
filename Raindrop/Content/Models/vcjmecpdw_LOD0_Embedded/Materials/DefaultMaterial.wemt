@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 64018056-0a0a-41e3-b4fe-a0ee9962e3c2
+  Id: b276db29-dbbd-4a0e-8c23-7b6282398657
   ActiveDirectives:
     - DIFF
     - IBL
@@ -179,6 +179,6 @@ MaterialInfo:
       Name: null
     - ID: ecdb206c-6226-466e-a518-016db244a749
       Name: RainTexture
-    - ID: 672d7ce5-91af-4fd8-8c1d-5f3e105052f8
+    - ID: fcf73048-e0a4-44bc-8ebe-e85e5e373a4f
       Name: RainOpacity
 Profiles: {}
