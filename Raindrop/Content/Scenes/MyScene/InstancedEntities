@@ -10,14 +10,14 @@ Items:
         Id: 809f1d2c-2305-4916-acfe-f81399ffb235
         IsEnabled: true
         LocalOrientation:
-          W: 0.912869573
-          X: -0.212743998
-          Y: 0.339344293
-          Z: 0.0790856257
+          W: 0.883047521
+          X: -0.133654818
+          Y: -0.444782794
+          Z: -0.0673187748
         LocalPosition:
-          X: 0.87802279
-          Y: 0.259584099
-          Z: 0.747472942
+          X: -0.919318914
+          Y: 0.12676543
+          Z: -0.334970593
         LocalScale:
           X: 1.0
           Y: 1.0
@@ -51,7 +51,7 @@ Items:
         FarPlane: 1000.0
         FieldOfView: 0.785398185
         FieldOfViewAxis: Vertical
-        FocalDistance: 0.5
+        FocalDistance: 0.100000001
         FocalLength: 50.0
         FrameBuffer: null
         FrustumCullingEnabled: true
@@ -216,7 +216,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 3e88b8d6-d0fd-4331-b5f0-85df96e7440c
+        Material: b3e9efa8-e832-47fb-bb95-df29932e097a
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
@@ -2923,6 +2923,57 @@ Items:
         Children: []
         Id: 8e0f48d9-2c1a-4a97-9b6f-92abdd539438
     Id: 40de4abc-841f-4b1a-afef-3cd9b693667e
+  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+    Name: postProcessingVolume
+    Tag: null
+    IsEnabled: true
+    IsStatic: false
+    Components:
+      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+        Id: 27c5bf2e-9126-4d55-b19a-5c17eee003d2
+        IsEnabled: true
+        LocalOrientation:
+          W: 1.0
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        LocalPosition:
+          X: -3.70061111
+          Y: -0.999384165
+          Z: -0.643496037
+        LocalScale:
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      - !Evergine.Components.Graphics3D.PostProcessingGraphRenderer,Evergine.Components
+        Id: f3f117e2-3f6c-4c9d-9d75-2007a1bbc92f
+        DebugBoundingbox: true
+        IsCullingEnabled: true
+        IsEnabled: true
+        IsGlobal: true
+        LayerOrder: 10
+        OrderBias: 0
+        RenderFlags: CastShadows
+        ppGraph: dd593717-0922-4f58-9c85-c309658eff03
+      - !Evergine.Framework.Physics3D.BoxCollider3D,Evergine.Framework
+        Id: b6001f9a-aea4-483a-88b3-e7faafdc5c84
+        IsEnabled: true
+        Margin: 0.0399999991
+        Offset:
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        OrientationOffset:
+          W: 1.0
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Size:
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    Children: []
+    Id: 450982fb-424a-404a-98ef-bae0d7a430fd
 Managers:
   - !Evergine.Framework.Managers.AssetSceneManager,Evergine.Framework
     Id: 4ae9964a-5a8a-463f-b714-050389b3b68c
