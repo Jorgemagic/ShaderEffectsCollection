@@ -1,0 +1,33 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 304d4f29-cf64-4ad2-9b1c-a97333c67728
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: c04b9906-bcd2-4fb3-ad80-50586471da61
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 29135e9e-8e0d-436c-b37d-dbfa8330c8b1
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: block_low
+        Item2: 47a7dca8-c003-4008-b62b-4114031fedf2
+      - Item1: petli_low
+        Item2: 95adbc32-50e0-4e90-b143-500cd9953f4b
+    Nodes:
+      - Sketchfab_model
+      - Sketchfab_model.Collada visual scene group
+      - Sketchfab_model.Collada visual scene group.petli_low
+      - Sketchfab_model.Collada visual scene group.petli_low.defaultMaterial
+      - Sketchfab_model.Collada visual scene group.block_low
+      - Sketchfab_model.Collada visual scene group.block_low.defaultMaterial
+SwapWindingOrder: false
